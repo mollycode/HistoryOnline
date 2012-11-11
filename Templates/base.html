@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Online History</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #a3a3a3;
+		}
+		.clearLeft {clear : left; }
+	</style>
+	<script src="/static/jQuery.js"></script>
+	<script src="/static/jlnav.js"></script>
+	<script>
+		$(function() {
+			$(".navbar").jlnav({
+				nav_font: '16px "courier new",monospace',
+				subnav_hover_bgcolor: 'FF6633',
+				subnav_bgcolor: 'ffb299',
+				subnav_font: '14px "courier new",monospace'
+			});
+		});
+	</script>
+	<script>
+		{% block scriptfn %}{% endblock %}
+	</script>
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="/create_web/">Historians</a></li>
+			<li><a href="/map/">Story Webs</a>
+			<ul>
+				<li><a href="/static/">A</a></li>
+			</ul>
+		</li>
+			<li><a href="/home/">History Online</a></li>
+		</ul>
+	</div>
+	<p class="clearLeft">
+		{% block main %}{% endblock %}
+	</p>
+</body>
+</html>
