@@ -1,6 +1,126 @@
 {% extends "base.html" %}
 
+{% block jsSources %}
+	<script type="text/javascript" src="/static/vivagraph.js"></script>
+{% endblock %}
+
+{% block scriptfn %}
+	<script>
+		$(function() {
+			var picSize = 100;
+
+			var graph = Viva.Graph.graph();
+			{% for name in names %}
+				graph.addNode('{{name.name}}','{{name.pic}}');
+			{% endfor %}
+
+			{% for name in names %}
+				{% for link in name.filters.all %}
+					graph.addLink('{{name.name}}', '{{link.name}}')
+				{% endfor %}
+			{% endfor %}
+
+			var graphics = Viva.Graph.View.svgGraphics(),
+			    highlightRelatedNodes = function(nodeId, isOn) {
+                
+                	graph.forEachLinkedNode(nodeId, function(node, link){
+                		if (link && link.ui) {
+                        	link.ui.attr('stroke', isOn ? '#FF6633' : '#000000');
+                    	}
+                	});
+
+                	document.getElementById('title').innerText=(isOn ? 'TESTTESTTEST' : '');
+                	document.getElementById('summary').innerText=(isOn ? 'TESTTESTTEST' : '');
+                	document.getElementById('filters').innerText=(isOn ? 'TESTTESTTEST' : '');
+            	};
+
+			graphics.node(function(node){
+				var url = {{ MEDIA_URL }} + node.data;
+
+				var ui = Viva.Graph.svg('image')
+					.attr('width', picSize)
+					.attr('height', picSize)
+					.link(url);
+
+				$(ui).hover(function() {
+					highlightRelatedNodes(node.id, true);
+				}, function() {
+					highlightRelatedNodes(node.id, false);
+				});
+				return ui;
+			}).placeNode(function(nodeUI, pos) {
+				nodeUI.attr('x', pos.x - picSize/2).attr('y', pos.y - picSize/2);
+			});
+
+			graphics.link(function(link){
+				return Viva.Graph.svg('line')
+					.attr('stroke', '#000000')
+					.attr('stroke-width', '2px')
+			});
+
+			var layout = Viva.Graph.Layout.forceDirected(graph, {
+				springLength : 200,
+				springCoeff : 0.0005,
+				dragCoeff : 0.08,
+				gravity : -50,
+			});
+
+			var renderer = Viva.Graph.View.renderer(graph, {
+				graphics : graphics,
+				container : document.getElementById('canvas-container'),
+				layout : layout,
+			});
+			renderer.run();
+		});
+	</script>
+{% endblock %}
+
+{% block styleblock %}
+#content
+{
+	position: relative;
+	padding: 10px;
+	margin: 10px;
+	float: left;	
+}
+#scrollbox
+{
+	float:left;
+	width:300px;
+	height:550px;
+	background-color: #ffb299;
+	margin:30px;
+	padding:15px;
+	border-style: outset;
+	border-color: #ffb299;
+	position:absolute;
+	left:0;
+}
+#canvas-container
+{
+	width:900px;
+	height:660px;
+	position:absolute;
+	left:400px;
+	left-margin: auto;
+}
+td
+{
+	margin: auto;
+	padding: 14px;
+}
+
+{% endblock %}
+
 {% block main %}
-<h1>History Online</h1>
-<p>{{ names }}</p>
+<div id="content">
+	<div id="scrollbox">
+		<table>
+			<tr><td id="title"></td></tr>
+			<tr><td id="summary"></td></tr>
+			<tr><td id ="filters"></td></tr>
+		</table>
+	</div>
+	<div id="canvas-container"></div>
+</div>
 {% endblock %}

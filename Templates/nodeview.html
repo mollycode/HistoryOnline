@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block styleblock %}
+
+#nodeArea
+{
+	background-color: #FAAC58;
+	box-shadow: inset 0 0 10px #000;
+	height: 650px;
+	width: 650px;
+	padding: 20px;
+	float: left;
+	margin: auto;
+}
+
+{%block styleNode %}{% endblock %}
+
+{% endblock%}
+
+{% block main %}
+
+<div id="nodeArea">
+	{% block nodeInfo %}{% endblock %}
+
+</div>
+
+{% endblock %}

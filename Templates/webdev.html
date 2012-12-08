@@ -1,10 +1,27 @@
-{% extends "base.html" %}
+{% extends "nodeview.html" %}
 
-{% block main %}
+{% block styleNode %}
 
+.fieldWrapper
+{
+	font: "courier new" monospace;
+	font-size: 16px;
+	padding: 10 px;
+	margin: auto;
+	width: auto;
+}
+
+{% endblock %}
+
+{% block nodeInfo %}
+<table class="tableForm">
 <form enctype="multipart/form-data" action="." method="post"> {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
+	<tr><td>{{form.name.name}}{{form.name}}</td></tr><tr></tr>
+	<tr><td>{{form.pic.name}}{{form.pic}}</td></tr>
+	<tr><td></td><td>{{form.summary.name}}{{form.summary}}</td></tr>
+	<tr><td>{{form.sources.name}}{{form.sources}}</td></tr>
+	<tr><td>{{form.filters.name}}{{form.filters}}</td></tr>
+	<tr><td><input type="submit" value="Submit"></td></tr>
 </form>
-
+</table>
 {% endblock %}
