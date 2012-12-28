@@ -16,12 +16,19 @@
 {% block nodeInfo %}
 <table class="tableForm">
 <form enctype="multipart/form-data" action="." method="post"> {% csrf_token %}
-	<tr><td>{{form.name.name}}{{form.name}}</td></tr><tr></tr>
-	<tr><td>{{form.pic.name}}{{form.pic}}</td></tr>
-	<tr><td></td><td>{{form.summary.name}}{{form.summary}}</td></tr>
-	<tr><td>{{form.sources.name}}{{form.sources}}</td></tr>
-	<tr><td>{{form.filters.name}}{{form.filters}}</td></tr>
-	<tr><td><input type="submit" value="Submit"></td></tr>
+	<tr><td>{{nodeForm.name.name}}{{nodeForm.name}}{{nodeForm.name.errors}}</td></tr><tr></tr>
+	<tr><td>{{nodeForm.pic.name}}{{nodeForm.pic}}{{nodeForm.pic.errors}}</td></tr>
+	<tr><td></td><td>{{nodeForm.summary.name}}{{nodeForm.summary}}{{nodeForm.summary.errors}}</td></tr>
+	<tr><td>{{nodeForm.sources.name}}{{nodeForm.sources}}{{nodeForm.sources.errors}}</td></tr>
+	<tr><td>{{nodeForm.filters.name}}{{nodeForm.filters}}{{nodeForm.filters.errors}}</td></tr>
+	<tr><td>{{nodeForm.relnodes.name}}{{nodeForm.relnodes}}{{nodeForm.relnodes.errors}}</td></tr>
+	<tr><td><input type="submit" name="node_sub" value="Submit"></td></tr>
+</form>
+</table>
+<table class="filterform">
+<form action="." method="post"> {% csrf_token %}
+	<tr><td>{{filterForm.name}}</td></tr>
+	<tr><td><input type="submit" name="filter_sub" value="Submit"></td></tr>
 </form>
 </table>
 {% endblock %}

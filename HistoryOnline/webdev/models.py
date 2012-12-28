@@ -15,7 +15,8 @@ class Node(models.Model):
 	pic = models.ImageField(upload_to='images/%Y/%m/%d')
 	summary = models.CharField(max_length=1000)
 	sources = models.URLField()
-	filters = models.ManyToManyField(Filter)
+	filters = models.ManyToManyField(Filter,null=True,blank=True)
+	relnodes = models.ManyToManyField("self",null=True,blank=True)
 
 	def __str__(self):
 		return self.name
@@ -30,8 +31,15 @@ class NodeForm(ModelForm):
 		self.fields['summary'].label = "Add summary and additional notes here:"
 		self.fields['summary'] = forms.CharField(widget=forms.Textarea)
 		self.fields['filters'].label = "Add hashtags (ex: #history #event1)"
-		self.fields['filters'].required = False
-		self.fields['filters'] = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Filter.objects.all())
+		self.fields['filters'] = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Filter.objects.all(), required=False)
+		self.fields['relnodes'] = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Node.objects.all(), required=False)
 
 	class Meta:
 		model = Node
+
+class FilterForm(ModelForm):
+	name = forms.CharField(required=True)
+	uid = forms.CharField(required=False)
+
+	class Meta:
+		model = Filter

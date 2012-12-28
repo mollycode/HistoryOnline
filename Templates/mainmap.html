@@ -15,8 +15,16 @@
 			{% endfor %}
 
 			{% for name in names %}
-				{% for link in name.filters.all %}
-					graph.addLink('{{name.name}}', '{{link.name}}')
+				{% for relnode in name.relnodes.all %}
+					graph.addLink('{{name.name}}', '{{relnode.name}}')
+				{% endfor %}
+			{% endfor %}
+
+			{% for name in names %}
+				{% for filter in name.filters.all %}
+					{% for node in filter.node_set.all %}
+						graph.addLink('{{name.name}}','{{node.name}}','{{filter.name}}')
+					{% endfor %}
 				{% endfor %}
 			{% endfor %}
 
