@@ -1014,6 +1014,8 @@ Viva.Graph.Node = function (id) {
     this.id = id;
     this.links = [];
     this.data = null;
+    this.sum = null;
+    this.title = null;
 };
 
 /**
@@ -1110,7 +1112,7 @@ Viva.Graph.graph = function () {
          *
          * @return {node} The newly added node or node with given id if it already exists.
          */
-        addNode : function (nodeId, data) {
+        addNode : function (nodeId, data, sum, title) {
             if (typeof nodeId === 'undefined') {
                 throw {
                     message: 'Invalid node identifier'
@@ -1148,6 +1150,14 @@ Viva.Graph.graph = function () {
                 }
 
                 node.data = augmentedData;
+            }
+
+            if (sum) {
+                node.sum = sum;
+            }
+
+            if (title) {
+                node.title = title;
             }
 
             nodes[nodeId] = node;
@@ -6588,7 +6598,7 @@ Viva.Graph.serializer = function () {
         },
 
         nodeTransformStore = function (node) {
-            return { id : node.id, data: node.data };
+            return { id : node.id, data: node.data, sum: node.sum, title: node.title};
         },
 
         linkTransformStore = function (link) {
@@ -6665,7 +6675,7 @@ Viva.Graph.serializer = function () {
                 var parsedNode = nodeTransform(store.nodes[i]);
                 if (!parsedNode.hasOwnProperty('id')) { throw 'Graph node format is invalid. Node.id is missing'; }
 
-                graph.addNode(parsedNode.id, parsedNode.data);
+                graph.addNode(parsedNode.id, parsedNode.data, parsedNode.sum, parsedNode.title);
             }
 
             for (i = 0; i < store.links.length; ++i) {

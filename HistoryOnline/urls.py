@@ -18,13 +18,19 @@ urlpatterns = patterns('HistoryOnline.home.views',
     )
 
 urlpatterns += patterns('HistoryOnline.mainMap.views',
-	url(r'^map/$', 'mainMap'),
+	url(r'^map/$', 'mapIntro'),
+    url(r'^map/(?P<title>\w+)/(?P<fil>\w+)/$', 'mainMap'),
 	)
 
 urlpatterns += patterns('HistoryOnline.webdev.views',
-	url(r'^create_web/$', 'webdev'),
+    url(r'create_web/$', 'devlist'),
+	url(r'^create_web/(?P<title>\w+)/$', 'webdev'),
     url(r'^submit/$', 'submitted'),
 	)
+
+urlpatterns += patterns('HistoryOnline.closeup.views',
+    url(r'^node/(?P<title>\w+)/(?P<topic>\w+)/$','closeup'),
+    )
 
 from django.conf import settings
 

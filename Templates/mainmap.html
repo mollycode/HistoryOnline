@@ -11,19 +11,23 @@
 
 			var graph = Viva.Graph.graph();
 			{% for name in names %}
-				graph.addNode('{{name.name}}','{{name.pic}}');
+				graph.addNode('{{name.name}}','{{name.pic}}', '{{name.summary|truncatewords:30}}', '{{name.title}}');
 			{% endfor %}
 
 			{% for name in names %}
 				{% for relnode in name.relnodes.all %}
-					graph.addLink('{{name.name}}', '{{relnode.name}}')
+					{% if relnode in names %}
+						graph.addLink('{{name.name}}', '{{relnode.name}}')
+					{% endif %}
 				{% endfor %}
 			{% endfor %}
 
 			{% for name in names %}
 				{% for filter in name.filters.all %}
 					{% for node in filter.node_set.all %}
-						graph.addLink('{{name.name}}','{{node.name}}','{{filter.name}}')
+						{% if node in names %}
+							graph.addLink('{{name.name}}','{{node.name}}','{{filter.name}}')
+						{% endif %}
 					{% endfor %}
 				{% endfor %}
 			{% endfor %}
@@ -33,13 +37,9 @@
                 
                 	graph.forEachLinkedNode(nodeId, function(node, link){
                 		if (link && link.ui) {
-                        	link.ui.attr('stroke', isOn ? '#FF6633' : '#000000');
+                        	link.ui.attr('stroke', isOn ? '#3399ff' : '#000000');
                     	}
                 	});
-
-                	document.getElementById('title').innerText=(isOn ? 'TESTTESTTEST' : '');
-                	document.getElementById('summary').innerText=(isOn ? 'TESTTESTTEST' : '');
-                	document.getElementById('filters').innerText=(isOn ? 'TESTTESTTEST' : '');
             	};
 
 			graphics.node(function(node){
@@ -52,8 +52,21 @@
 
 				$(ui).hover(function() {
 					highlightRelatedNodes(node.id, true);
-				}, function() {
+				
+					document.getElementById('title').innerText=node.id;
+        		    document.getElementById('summary').innerText=node.sum;
+    	      		  		
+        			}, function() {
 					highlightRelatedNodes(node.id, false);
+					
+					document.getElementById('title').innerText=('');
+					document.getElementById('summary').innerText=('');
+				});
+
+				$(ui).dblclick(function() {
+					var nodename = (node.id).split(' ').join('_');
+					var titlename = node.title;
+					window.location.href = "/node/"+ node.title + "/" + nodename +"/";
 				});
 				return ui;
 			}).placeNode(function(nodeUI, pos) {
@@ -67,10 +80,10 @@
 			});
 
 			var layout = Viva.Graph.Layout.forceDirected(graph, {
-				springLength : 200,
+				springLength : 300,
 				springCoeff : 0.0005,
 				dragCoeff : 0.08,
-				gravity : -50,
+				gravity : -0.07,
 			});
 
 			var renderer = Viva.Graph.View.renderer(graph, {
@@ -80,6 +93,13 @@
 			});
 			renderer.run();
 		});
+	</script>
+	<script type="text/javascript">
+		function filterClick(val)
+		{
+			var fil = val.split(' ').join('_');
+			window.location.href = "/map/" + fil +"/";
+		}
 	</script>
 {% endblock %}
 
@@ -91,18 +111,20 @@
 	margin: 10px;
 	float: left;	
 }
-#scrollbox
+.box
 {
-	float:left;
 	width:300px;
-	height:550px;
-	background-color: #ffb299;
-	margin:30px;
+	float:left;	
+	min-height:250px;
+	background-color: #99CCFF;
+	margin:15px;
 	padding:15px;
-	border-style: outset;
-	border-color: #ffb299;
-	position:absolute;
+	box-shadow: inset 0 0 10px #6699CC;
 	left:0;
+}
+#boxes
+{
+	width:40%;
 }
 #canvas-container
 {
@@ -112,22 +134,26 @@
 	left:400px;
 	left-margin: auto;
 }
-td
-{
-	margin: auto;
-	padding: 14px;
-}
 
 {% endblock %}
 
 {% block main %}
 <div id="content">
-	<div id="scrollbox">
-		<table>
-			<tr><td id="title"></td></tr>
-			<tr><td id="summary"></td></tr>
-			<tr><td id ="filters"></td></tr>
-		</table>
+	<div id="boxes">
+		<div class="box" id="scroll">
+			<table padding="5px">
+				<tr><td><h3 id="title"/></td></tr>
+				<tr><td id="summary"></td></tr>
+				<tr><td id ="filters"></td></tr>
+			</table>
+		</div>
+		<div class="box" id="filters">
+			<h3>Topic Filters</h3>
+				<strong><input type="radio" name="filters" value="all" onclick="filterClick(value)">all</strong><br>
+			{% for filter in filters %}
+				<strong><input type="radio" name="filters" value="{{filter.name}}" onclick="filterClick(value)">{{filter.name}}</strong><br>
+			{% endfor%}
+		</div>	
 	</div>
 	<div id="canvas-container"></div>
 </div>

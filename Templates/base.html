@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Online History</title>
+	<title>History Online</title>
 	<style type="text/css">
 		body
 		{
@@ -69,8 +69,8 @@
 		$(function() {
 			$(".navbar").jlnav({
 				nav_font: '16px "courier new",monospace',
-				subnav_hover_bgcolor: 'FF6633',
-				subnav_bgcolor: 'ffb299',
+				subnav_hover_bgcolor: '3399ff',
+				subnav_bgcolor: '33CCFF',
 				subnav_font: '14px "courier new",monospace'
 			});
 		});
@@ -82,12 +82,20 @@
 	<div class="outer">
 		<div class="navbar">
 			<ul>
-				<li><a href="/create_web/">Historians</a></li>
-				<li><a href="/map/">Story Webs</a>
+				<li><a href="/create_web/">Historians</a>
 				<ul>
-					<li><a href="/static/">A</a></li>
+					{% for map in maps %}
+					<li><a href="/create_web/{{map.name.split|join:'_'}}/">{{map.name}}</a></li>
+					{% endfor %}
 				</ul>
 			</li>
+				<li><a href="/map/">Story Webs</a>
+				<ul>
+					{% for map in maps %}
+					<li><a href="/map/{{map.name.split|join:'_'}}/all/">{{map.name}}</a></li>
+					{% endfor %}
+				</ul>
+				</li>
 				<li><a href="/home/">History Online</a></li>
 			</ul>
 		</div>

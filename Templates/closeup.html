@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+
+{% block styleblock %}
+
+#maintopic
+{
+	background-color:#99ccff;
+	box-shadow: inset 0 0 10px #6699CC;
+	width:70%;
+	float:left;
+	margin:40px;
+	padding:20px;
+}
+.sidenode
+{
+	margin-right:20px;
+	float:right;
+}
+.sidepic
+{
+	width:125px;
+	height:auto;
+	border-style:solid;
+	border-color:black;
+}
+#mainpic
+{
+	width:95%;
+	height:auto;
+	border-style:solid;
+	border-color:black;
+}
+#sources
+{
+	list-style: none;
+}
+
+td
+{
+	vertical-align:top;
+	text-align:left;
+	padding=5px;
+	margin=5px;
+	width:50%;
+}
+#summary
+{
+	width:35%;
+}
+{% endblock %}
+
+{% block main %}
+<div id="maintopic">
+	<table>
+		<tr><td><h1 id="name">{{node.name}}</h1></td></tr>
+		<tr><td><img id="mainpic" src='{{MEDIA_URL}}{{node.pic}}'/></td>
+		<td id="summary">{{node.summary}}</td></tr>
+		<tr><td><ui id="sources">
+			<li><a href='{{node.source1}}' target="_blank">{{node.source1}}</a></li>
+			<li><a href='{{node.source2}}' target="_blank">{{node.source2}}</a></li>
+			<li><a href='{{node.source3}}' target="_blank">{{node.source3}}</a></li>
+		</ui></td></tr>
+	</table>
+</div>
+
+<div>
+<table>	
+	{% for rel in reln%}
+		<div class="sidenode">
+			<tr><td><h3>{{rel.name}}</h3></td></tr>
+			<tr><td><img class="sidepic" onclick="window.location='/node/{{rel.name.split|join:'_'}}/';" src='{{MEDIA_URL}}{{rel.pic}}'/></td></tr>
+		</div>
+	{% endfor %}
+
+	{% for filn in fil %}
+		{% for n in filn.node_set.all %}
+			{% if n.name != node.name and n.name not in reln %}
+			<div class="sidenode">
+				<tr><td vertical-align="bottom"><h3>{{n.name}}</h3></td></tr>
+				<tr><td><img class="sidepic" onclick="window.location='/node/{{n.name.split|join:'_'}}/';" src='{{MEDIA_URL}}{{n.pic}}'/></td></tr>
+			</div>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+</table>
+</div>
+{% endblock %}

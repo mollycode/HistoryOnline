@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="mapList">
+	{% for map in maps %}
+		<a href="/map/{{map.name.split|join:'_'}}/all/">{{map}}</a><br>
+	{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="mapList">
+	{% for map in maps %}
+		<a href="/create_web/{{map.name.split|join:'_'}}/">{{map}}</a><br>
+	{% endfor %}
+</div>
+<div id="mapform">
+	<table>
+		<form action="." method="post"> {% csrf_token %}
+			<tr><td><h4>{{mapForm.name.label}}  {{mapForm.name}}</h4></td></tr>
+			<tr><td><input type="submit" value="Submit"></td></tr>
+		</form>
+	</table>
+</div>
+{% endblock%}

@@ -6,29 +6,65 @@
 {
 	font: "courier new" monospace;
 	font-size: 16px;
-	padding: 10 px;
+	padding: 2px;
 	margin: auto;
 	width: auto;
 }
-
+td
+{
+	vertical-align:top;
+	margin:0;
+}
+#nodeform
+{
+	border-style:plain;
+	background-color:blue;
+}
+.sidepic
+{
+	width:100px;
+	height:auto;
+	border-style:solid;
+	border-color:black;
+}
 {% endblock %}
 
 {% block nodeInfo %}
 <table class="tableForm">
 <form enctype="multipart/form-data" action="." method="post"> {% csrf_token %}
-	<tr><td>{{nodeForm.name.name}}{{nodeForm.name}}{{nodeForm.name.errors}}</td></tr><tr></tr>
-	<tr><td>{{nodeForm.pic.name}}{{nodeForm.pic}}{{nodeForm.pic.errors}}</td></tr>
-	<tr><td></td><td>{{nodeForm.summary.name}}{{nodeForm.summary}}{{nodeForm.summary.errors}}</td></tr>
-	<tr><td>{{nodeForm.sources.name}}{{nodeForm.sources}}{{nodeForm.sources.errors}}</td></tr>
-	<tr><td>{{nodeForm.filters.name}}{{nodeForm.filters}}{{nodeForm.filters.errors}}</td></tr>
-	<tr><td>{{nodeForm.relnodes.name}}{{nodeForm.relnodes}}{{nodeForm.relnodes.errors}}</td></tr>
+	<tr><td><h4>{{nodeForm.name.label}}   {{nodeForm.name}}</h4>{{nodeForm.name.errors}}</td></tr><tr>
+	<tr><td><h4>{{nodeForm.pic.label}}  {{nodeForm.pic}}</h4>{{nodeForm.pic.errors}}</td>
+	<td rowspan="6"><h4>{{nodeForm.summary.label}}{{nodeForm.summary}}</h4>{{nodeForm.summary.errors}}</td></tr>
+	<tr><td><h4>{{nodeForm.source1.label}}</h4></td><td></td><tr>
+	<tr><td>{{nodeForm.source1}}{{nodeForm.source1.errors}}</td><td></td></tr>
+	<tr><td>{{nodeForm.source2}}{{nodeForm.source2.errors}}</td><td></td></tr>
+	<tr><td>{{nodeForm.source3}}{{nodeForm.source3.errors}}</td><td></td></tr>
+	<tr><td><h4>{{nodeForm.relnodes.label}}</h4>{{nodeForm.relnodes}}{{nodeForm.relnodes.errors}}</td>
+	<td><h4>{{nodeForm.filters.label}}</h4>{{nodeForm.filters}}{{nodeForm.filters.errors}}</td></tr>
 	<tr><td><input type="submit" name="node_sub" value="Submit"></td></tr>
 </form>
 </table>
+{% endblock %}
+
+{% block filterInfo %}
 <table class="filterform">
 <form action="." method="post"> {% csrf_token %}
-	<tr><td>{{filterForm.name}}</td></tr>
+	<tr><td><h4>{{filterForm.name.label}}  {{filterForm.name}}</h4></td></tr>
 	<tr><td><input type="submit" name="filter_sub" value="Submit"></td></tr>
 </form>
+</table>
+{% endblock %}
+
+{% block reviewInfo %}
+<table>	
+	{% for node in nodes %}
+	<form action="." method="post">{% csrf_token %}
+		<div class="sidenode">
+			<tr><td><input type="checkbox" name="deleted_nodes" value="{{node.name}}"/>{{node.name}}</td></tr>
+			<tr><td><img class="sidepic" src='{{MEDIA_URL}}{{node.pic}}'/></td></tr>
+		</div>
+	{% endfor %}
+		<tr><td><input type="submit" name="review_sub" value="Delete Selected"></td></tr>
+	</form>
 </table>
 {% endblock %}
