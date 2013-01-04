@@ -2,7 +2,7 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
-from HistoryOnline.webdev.models import Node, Filter
+from HistoryOnline.webdev.models import Node, Filter, Map
 
 def closeup(request, title, topic):
 	new_topic = topic.replace('_',' ')
