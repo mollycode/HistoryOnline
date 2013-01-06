@@ -54,7 +54,7 @@ class NodeForm(ModelForm):
 		self.fields['filters'] = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Filter.objects.filter(title=title), required=False)
 		self.fields['filters'].label = "Add tags:"
 		self.fields['relnodes'] = forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple(), queryset=Node.objects.filter(title=title), required=False)
-		self.fields['relnodes'].label = "Add related events:"
+		self.fields['relnodes'].label = "Add related topics:"
 		self.fields['title'].required = False
 
 	class Meta:
