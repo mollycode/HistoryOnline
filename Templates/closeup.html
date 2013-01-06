@@ -5,12 +5,24 @@
 
 #maintopic
 {
-	background-color:#99ccff;
-	box-shadow: inset 0 0 10px #6699CC;
+	color:#FFFFCC;
+	background-color:#065073;
+	box-shadow: inset 0 0 20px #003366;
+	border-radius:3px;
 	width:70%;
 	float:left;
 	margin:40px;
 	padding:20px;
+}
+a
+{
+	color:#FFFFCC;
+	text-decoration: none;
+}
+a:hover
+{
+	color:#55AEFC;
+	text-decoration: underline;
 }
 .sidenode
 {
@@ -29,7 +41,7 @@
 	width:95%;
 	height:auto;
 	border-style:solid;
-	border-color:black;
+	border-color:#FFFFCC;
 }
 #sources
 {
@@ -40,8 +52,8 @@ td
 {
 	vertical-align:top;
 	text-align:left;
-	padding=5px;
-	margin=5px;
+	padding:5px;
+	margin:10px;
 	width:50%;
 }
 #summary
@@ -50,12 +62,33 @@ td
 }
 {% endblock %}
 
+{% block scriptfn %}
+<script type="text/javascript">
+	window.onload=function() {
+		var sideNodes = document.getElementById("sideTable");
+
+		{% for filn in fil %}
+			{% for n in filn.node_set.all %}
+				{% if n.name != node.name and n.name not in reln %}
+					if (document.getElementById("{{n.name}}") == null)
+					{ 
+						var rowNode = document.createElement("div");
+						rowNode.innerHTML += '<div id="{{n.name}}"></div><tr><td><h4>{{n.name}}</h4></td></tr><tr><td><img class="sidepic" onclick=window.location="/node/{{title}}/{{n.name.split|join:"_"}}/"; src="{{MEDIA_URL}}{{n.pic}}"/></td></tr>';
+						sideNodes.appendChild(rowNode);
+					}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	}
+</script>
+{% endblock %}
+
 {% block main %}
 <div id="maintopic">
 	<table>
 		<tr><td><h1 id="name">{{node.name}}</h1></td></tr>
 		<tr><td><img id="mainpic" src='{{MEDIA_URL}}{{node.pic}}'/></td>
-		<td id="summary">{{node.summary}}</td></tr>
+		<td id="summary" rowspan="2">{{node.summary}}</td></tr>
 		<tr><td><ui id="sources">
 			<li><a href='{{node.source1}}' target="_blank">{{node.source1}}</a></li>
 			<li><a href='{{node.source2}}' target="_blank">{{node.source2}}</a></li>
@@ -65,24 +98,14 @@ td
 </div>
 
 <div>
-<table>	
+<table id="sideTable">	
 	{% for rel in reln%}
-		<div class="sidenode">
-			<tr><td><h3>{{rel.name}}</h3></td></tr>
-			<tr><td><img class="sidepic" onclick="window.location='/node/{{rel.name.split|join:'_'}}/';" src='{{MEDIA_URL}}{{rel.pic}}'/></td></tr>
+		<div class="sidenode" id="{{rel.name}}">
+			<tr><td><h4>{{rel.name}}</h4></td></tr>
+			<tr><td><img class="sidepic" onclick="window.location='/node/{{title}}/{{rel.name.split|join:'_'}}/';" src='{{MEDIA_URL}}{{rel.pic}}'/></td></tr>
 		</div>
 	{% endfor %}
 
-	{% for filn in fil %}
-		{% for n in filn.node_set.all %}
-			{% if n.name != node.name and n.name not in reln %}
-			<div class="sidenode">
-				<tr><td vertical-align="bottom"><h3>{{n.name}}</h3></td></tr>
-				<tr><td><img class="sidepic" onclick="window.location='/node/{{n.name.split|join:'_'}}/';" src='{{MEDIA_URL}}{{n.pic}}'/></td></tr>
-			</div>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
 </table>
 </div>
 {% endblock %}

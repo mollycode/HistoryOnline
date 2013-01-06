@@ -11,7 +11,7 @@
 
 			var graph = Viva.Graph.graph();
 			{% for name in names %}
-				graph.addNode('{{name.name}}','{{name.pic}}', '{{name.summary|truncatewords:30}}', '{{name.title}}');
+				graph.addNode('{{name.name}}','{{name.pic}}', '{{name.summary|truncatewords:40}}', '{{name.title}}');
 			{% endfor %}
 
 			{% for name in names %}
@@ -37,7 +37,7 @@
                 
                 	graph.forEachLinkedNode(nodeId, function(node, link){
                 		if (link && link.ui) {
-                        	link.ui.attr('stroke', isOn ? '#3399ff' : '#000000');
+                        	link.ui.attr('stroke', isOn ? '#55AEFC' : '#000000');
                     	}
                 	});
             	};
@@ -98,7 +98,7 @@
 		function filterClick(val)
 		{
 			var fil = val.split(' ').join('_');
-			window.location.href = "/map/" + fil +"/";
+			window.location.href = "/map/{{title}}/" + fil +"/";
 		}
 	</script>
 {% endblock %}
@@ -113,13 +113,15 @@
 }
 .box
 {
+	color:#FFFFCC;
 	width:300px;
 	float:left;	
 	min-height:250px;
-	background-color: #99CCFF;
+	background-color: #065073;
 	margin:15px;
 	padding:15px;
-	box-shadow: inset 0 0 10px #6699CC;
+	box-shadow: inset 0 0 10px #003366;
+	border-radius:3px;
 	left:0;
 }
 #boxes
@@ -144,14 +146,13 @@
 			<table padding="5px">
 				<tr><td><h3 id="title"/></td></tr>
 				<tr><td id="summary"></td></tr>
-				<tr><td id ="filters"></td></tr>
 			</table>
 		</div>
 		<div class="box" id="filters">
-			<h3>Topic Filters</h3>
-				<strong><input type="radio" name="filters" value="all" onclick="filterClick(value)">all</strong><br>
+			<h4>Topic Filters:</h4>
+				<input type="radio" name="filters" value="all" onclick="filterClick(value)">all<br>
 			{% for filter in filters %}
-				<strong><input type="radio" name="filters" value="{{filter.name}}" onclick="filterClick(value)">{{filter.name}}</strong><br>
+				<input type="radio" name="filters" value="{{filter.name}}" onclick="filterClick(value)">{{filter.name}}<br>
 			{% endfor%}
 		</div>	
 	</div>

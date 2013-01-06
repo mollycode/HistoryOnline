@@ -2,31 +2,65 @@
 
 {% block styleblock %}
 
-p
+h3
 {
-	width: 75%;
-	margin: auto;
-	padding: 40px;
+	color:#FFFFCC;
+	line-height: 1.5;
+	text-align: center;
 }
-body
+h1
 {
-	margin: auto;
+	text-align: center;
+	color:#FFFFCC;
 }
-
-button
+#buttons
 {
+	width: 26.5%;
 	margin: auto;
-	border-style: outset;
+	margin-bottom: 20px;
 }
-
+#background
+{
+	width: 80%;
+	height: 540px;
+	margin: auto;
+	background-image: url(/static/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius:5px;
+}
+#square
+{
+	width: 90%;
+	height: 80%;
+	background-color:#065073;
+	float:left;
+	margin:5%;
+	opacity:.3;
+}
+#welcomeText
+{
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	margin: 10%;
+	margin-left: 5%;
+	margin-right:5%;
+	padding: 5px;
+}
 {% endblock %}
 
 {% block main %}
-
-	<h1>Welcome to History Online</h1>
-	<p>History Online is a place where students can learn about historical events through a visual and interactive experience. Historians can use this as a tool to map out their research and publish their information to the public. While many people assume history must be read linearly, History Online allows you to explore specific topics and understand links in events that you may have never before considered! 
-		Click below to start you historical explorations or to create your own map</p>
-	<a href="/map" class="button">Start</a>
-	<a href="/create_web" class="button">Create New</a>
-
+<div id="background">
+	<div id="square"></div>
+	<div id="welcomeText">
+		<h1>Welcome to History Online</h1>
+		<h3>History Online is a place where students can learn about historical events through a visual and interactive experience. Historians can use this as a tool to map out their research and publish their information to the public. While many people assume history must be read linearly, History Online allows you to explore specific topics and understand links in events that you may have never before considered! 
+		Click below to start you historical explorations or to create your own map</h3>
+	</div>
+</div>
+<div id="buttons">
+	<a href="/map" class="button">Explore</a>
+	<a href="/create_web" class="button">Create Map</a>
+</div>
 {% endblock %}

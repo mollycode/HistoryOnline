@@ -1,17 +1,103 @@
 {% extends "base.html" %}
 
+{% block styleblock %}
+#background
+{
+	width: 80%;
+	height: 540px;
+	margin: auto;
+	margin-bottom:40px;
+	background-image: url(/static/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius:5px;
+}
+.box 
+{
+	background-color:#065073;
+	float:left;
+	margin:5%;
+	opacity:.3;
+	height:80%;
+}
+#intro
+{
+	width:55%;
+	margin-right:0;
+}
+#intro_text
+{
+	color: #FFFFCC;
+	position: absolute;
+	width:40%;
+	height: 70%;
+	margin: 5%;
+	margin-left: 7%;
+	overflow: auto;
+	padding:5px;
+	top:5%;
+}
+#mapList_text
+{
+	color: #FFFFCC;
+	position: absolute;
+	right:10%;
+	width:20%;
+	overflow: auto;
+	height:40%;
+	margin:5%;
+	top: 5%;
+	padding:5px;
+}
+#mapform
+{
+	color: #FFFFCC;
+	position: absolute;
+	right:10%;
+	top: 50%;
+	width:20%;
+	height:30%;
+	margin:5%;
+	padding:5px;
+}
+#list_box
+{
+	width:30%;
+}
+a
+{
+	color:#FFFFCC;
+	text-decoration: none;
+}
+a:hover
+{
+	color:#55AEFC;
+	text-decoration: underline;
+}
+{% endblock %}
 {% block main %}
-<div id="mapList">
-	{% for map in maps %}
-		<a href="/create_web/{{map.name.split|join:'_'}}/">{{map}}</a><br>
-	{% endfor %}
-</div>
-<div id="mapform">
-	<table>
-		<form action="." method="post"> {% csrf_token %}
-			<tr><td><h4>{{mapForm.name.label}}  {{mapForm.name}}</h4></td></tr>
-			<tr><td><input type="submit" value="Submit"></td></tr>
-		</form>
-	</table>
+<div id="background">
+	<div id="intro" class="box"></div>
+	<div id="intro_text">
+		<h3>Interactive Maps</h3>
+		<h4> as</h4>
+	</div>
+	<div class="box" id="list_box"></div>
+	<div id="mapList_text">
+		<h3>Maps:</h3>
+		<ul>
+		{% for map in maps %}
+			<li><a href="/create_web/{{map.name.split|join:'_'}}/"><h4>{{map.name}}</h4></a></li>
+		{% endfor %}
+		</ul>
+	</div>
+	<div id="mapform">
+		<table>
+			<form action="." method="post"> {% csrf_token %}
+				<tr><td><h4>{{mapForm.name.label}}  {{mapForm.name}}</h4></td></tr>
+				<tr><td><input type="submit" value="Submit"></td></tr>
+			</form>
+		</table>
+	</div>
 </div>
 {% endblock%}
