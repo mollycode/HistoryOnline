@@ -15,5 +15,6 @@ def closeup(request, title, topic):
 		{'node': node,
 		'reln': reln,
 		'fil': fil,
-		'maps': maps,}, 
+		'maps': maps,
+		'title': title}, 
 		context_instance = RequestContext(request))

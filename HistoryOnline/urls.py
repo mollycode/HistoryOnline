@@ -14,7 +14,7 @@ urlpatterns = patterns('HistoryOnline.home.views',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^home/$', 'home_screen'),
+    url(r'^$', 'home_screen'),
     )
 
 urlpatterns += patterns('HistoryOnline.mainMap.views',
