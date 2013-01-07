@@ -1,0 +1,1006 @@
+2013-01-06T21:49:13+00:00 app[web.1]: [06/Jan/2013 15:49:13] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-06T21:49:13+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=38ms status=200 bytes=495550
+2013-01-06T21:49:13+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=7ms status=404 bytes=2951
+2013-01-06T21:49:17+00:00 app[web.1]: [06/Jan/2013 15:49:17] "GET /create_web/Demo/ HTTP/1.1" 200 6240
+2013-01-06T21:49:17+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=4ms service=94ms status=200 bytes=6240
+2013-01-06T21:49:17+00:00 app[web.1]: [06/Jan/2013 15:49:17] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:49:17+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=4ms service=4ms status=304 bytes=0
+2013-01-06T21:49:17+00:00 app[web.1]: [06/Jan/2013 15:49:17] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:49:17+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=22ms connect=25ms service=9ms status=304 bytes=0
+2013-01-06T21:49:17+00:00 app[web.1]: [06/Jan/2013 15:49:17] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 404 1705
+2013-01-06T21:49:17+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=7ms connect=2
+5ms service=6ms status=404 bytes=1705
+2013-01-06T21:49:17+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=10ms status=404 bytes=2951
+2013-01-06T21:50:19+00:00 heroku[api]: Starting process with command `python manage.py syncdb` by mnacey@princeton.edu
+2013-01-06T21:50:27+00:00 heroku[run.1866]: Awaiting client
+2013-01-06T21:50:27+00:00 heroku[run.1866]: Starting process with command `python manage.py syncdb`
+2013-01-06T21:50:27+00:00 heroku[run.1866]: State changed from starting to up
+2013-01-06T21:50:28+00:00 heroku[run.1866]: Client connection closed. Sending SIGHUP to all processes
+2013-01-06T21:50:29+00:00 heroku[run.1866]: State changed from up to complete
+2013-01-06T21:50:29+00:00 heroku[run.1866]: Process exited with status 0
+2013-01-06T21:50:33+00:00 app[web.1]: [06/Jan/2013 15:50:33] "GET /create_web/Demo/ HTTP/1.1" 200 6240
+2013-01-06T21:50:33+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=113ms status=200 bytes=6240
+2013-01-06T21:50:33+00:00 app[web.1]: [06/Jan/2013 15:50:33] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:50:33+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=14ms
+ service=13ms status=304 bytes=0
+2013-01-06T21:50:33+00:00 app[web.1]: [06/Jan/2013 15:50:33] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:50:33+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=21ms service=12ms status=304 bytes=0
+2013-01-06T21:50:33+00:00 app[web.1]: [06/Jan/2013 15:50:33] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 404 1705
+2013-01-06T21:50:33+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=10ms status=404 bytes=1705
+2013-01-06T21:50:34+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=23ms service=11ms status=404 bytes=2951
+2013-01-06T21:50:43+00:00 app[web.1]: [06/Jan/2013 15:50:43] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:50:43+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=111ms status=302 bytes=0
+2013-01-06T21:50:43+00:00 app[web.1]: [06/Jan/2013 15:50:43] "GET /create_web/Demo/ HTTP/1.1" 200 5720
+2013-01-06T21:50:43+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=7ms service=105ms status=200 bytes=5720
+2013-01-06T21:50:43+00:00 app[web.1]: [06/Jan/2013 15:50:43] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:50:43+00:00 app[web.1]: [06/Jan/2013 15:50:43] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:50:43+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=4ms service=5ms status=304 bytes=0
+2013-01-06T21:50:43+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=9ms status=304 bytes=0
+2013-01-06T21:50:44+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=404 bytes=2951
+2013-01-06T21:50:49+00:00 app[web.1]: [06/Jan/2013 15:50:49] "GET /create_web/ HTTP/1.1" 200 4574
+2013-01-06T21:50:49+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=9ms service=90ms status=200 bytes=4574
+2013-01-06T21:50:49+00:00 app[web.1]: [06/Jan/2013 15:50:49] "GET /static/background.jpg HTTP/1.1" 304 0
+2013-01-06T21:50:49+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-06T21:50:49+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=404 bytes=2951
+2013-01-06T21:50:56+00:00 heroku[router]: at=info method=POST path=/create_web/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=87ms status=302 bytes=0
+2013-01-06T21:50:56+00:00 app[web.1]: [06/Jan/2013 15:50:56] "POST /create_web/ HTTP/1.1" 302 0
+2013-01-06T21:50:56+00:00 app[web.1]: [06/Jan/2013 15:50:56] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T21:50:56+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=74ms status=200 bytes=4812
+2013-01-06T21:50:56+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-06T21:50:56+00:00 app[web.1]: [06/Jan/2013 15:50:56] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:50:56+00:00 app[web.1]: [06/Jan/2013 15:50:56] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:50:56+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=5ms status=304 bytes=0
+2013-01-06T21:50:57+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=5ms service=8ms status=404 bytes=2951
+2013-01-06T21:51:01+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=86ms status=200 bytes=5875
+2013-01-06T21:51:01+00:00 app[web.1]: [06/Jan/2013 15:51:01] "GET /create_web/Demo/ HTTP/1.1" 200 5875
+2013-01-06T21:51:03+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=19ms status=404 bytes=2951
+2013-01-06T21:51:45+00:00 app[web.1]: [06/Jan/2013 15:51:45] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-
+01-06T21:51:45+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=188ms status=302 bytes=0
+2013-01-06T21:51:45+00:00 app[web.1]: [06/Jan/2013 15:51:45] "GET /create_web/Demo/ HTTP/1.1" 200 6395
+2013-01-06T21:51:46+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=103ms status=200 bytes=6395
+2013-01-06T21:51:46+00:00 app[web.1]: [06/Jan/2013 15:51:46] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:51:46+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=6ms status=304 bytes=0
+2013-01-06T21:51:46+00:00 app[web.1]: [06/Jan/2013 15:51:46] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:51:46+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=4ms service=5ms status=304 bytes=0
+2013-01-06T21:51:46+00:00 app[web.1]: [06/Jan/2013 15:51:46] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-06T21:51:46+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=12ms status=200 bytes=45639
+2013-01-06T21:51:49+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=404 bytes=2951
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=856ms status=302 bytes=0
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "GET /create_web/Demo/ HTTP/1.1" 200 6895
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=28ms connect=21ms service=183ms status=200 bytes=6895
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=11ms connect=21ms service=9ms status=304 bytes=0
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:52:23+00:00 app[web.1]: [06/Jan/2013 15:52:23] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-06T21:52:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=17ms connect=24ms service=49ms status=200 bytes=1164410
+2013-01-06T21:52:25+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=21ms status=404 bytes=2951
+2013-01-06T21:53:12+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=30ms service=239ms status=302 bytes=0
+2013-01-06T21:53:12+00:00 app[web.1]: [06/Jan/2013 15:53:12] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:53:12+00:00 app[web.1]: [06/Jan/2013 15:53:12] "GET /create_web/Demo/ HTTP/1.1" 200 7416
+2013-01-06T21:53:12+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=90ms status=200 bytes=7416
+2013-01-06T21:53:13+00:00 app[web.1]: [06/Jan/2013 15:53:13] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:53:13+00:00 app[web.1]: [06/Jan/2013 15:53:13] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:53:13+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=10ms connect=20ms service=6ms status=304 bytes=0
+2013-01-06T21:53:13+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=10ms connect=10ms service=8ms status=304 bytes=0
+2013-01-06T21:53:13+00:00 app[web.1]: [06/Jan/2013 15:53:13] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-06T21:53:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=21ms status=200 bytes=91170
+2013-01-06T21:53:13+00:00 app[web.1]: [06/Jan/2013 15:53:13] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:53:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=18ms status=304 bytes=0
+2013-01-06T21:53:16+00:00 app[web.1]: [06/Jan/2013 15:53:16] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:53:16+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3000ms service=20ms status=304 bytes=0
+2013-01-06T21:53:17+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=404 bytes=2951
+2013-01-06T21:54:28+00:00 app[web.1]: [06/Jan/2013 15:54:28] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:54:28+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=9ms connect=22ms service=137ms status=302 bytes=0
+2013-01-06T21:54:28+00:00 app[web.1]: [06/Jan/2013 15:54:28] "GET /create_web/Demo/ HTTP/1.1" 200 7931
+2013-01-06T21:54:28+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=5ms connect=19ms service=139ms status=200 bytes=7931
+2013-01-06T21:54:28+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=13ms service=6ms status=304 bytes=0
+2013-01-06T21:54:28+00:00 app[web.1]: [06/Jan/2013 15:54:28] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:54:28+00:00 app[web.1]: [06/Jan/2013 15:54:28] "GET /static/jQue
+ry.js HTTP/1.1" 304 0
+2013-01-06T21:54:28+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=6ms status=304 bytes=0
+2013-01-06T21:54:29+00:00 app[web.1]: [06/Jan/2013 15:54:29] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-06T21:54:29+00:00 app[web.1]: [06/Jan/2013 15:54:29] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T21:54:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=4ms status=304 bytes=0
+2013-01-06T21:54:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=200 bytes=33080
+2013-01-06T21:54:29+00:00 app[web.1]: [06/Jan/2013 15:54:29] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:54:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=9ms status=304 bytes=0
+2013-01-06T21:54:29+00:00 app[web.1]: [06/Jan/2013 15:54:29] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:54:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=5ms status=304 bytes=0
+2013-01-06T21:54:30+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=5ms service=6ms status=404 bytes=2951
+2013-01-06T21:56:38+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=4ms connect=8ms service=247ms status=302 bytes=0
+2013-01-06T21:56:38+00:00 app[web.1]: [06/Jan/2013 15:56:38] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:56:38+00:00 app[web.1]: [06/Jan/2013 15:56:38] "GET /create_web/Demo/ HTTP/1.1" 200 8465
+2013-01-06T21:56:38+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=73ms status=200 bytes=8465
+2013-01-06T21:56:38+00:00 app[web.1]: [06/Jan/2013 15:56:38] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:56:38+00:00 app[web.1]: [06/Jan/2013 15:56:38] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:56:38+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=5ms status=304 bytes=0
+2013-01-06T21:56:38+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=15ms service=8ms status=304 bytes=0
+2013-01-06T21:56:39+00:00 app[web.1]: [06/Jan/2013 15:56:39] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-06T21:56:39+00:00 app[web.1]: [06/Jan/2013 15:56:39] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=3ms status=304 bytes=0
+2013-01-06T21:56:39+00:00 app[web.1]: [06/Jan/2013 15:56:39] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=12ms status=200 bytes=53837
+2013-01-06T21:56:39+00:00 app[web.1]: [06/Jan/2013 15:56:39] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=10ms status=304 bytes=0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=6ms status=304 bytes=0
+2013-01-06T21:56:39+00:00 app[web.1]: [06/Jan/2013 15:56:39] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=12ms service=34ms status=304 bytes=0
+2013-01-06T21:56:39+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=404 bytes=2951
+2013-01-06T21:56:43+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=8ms service=480ms status=200 bytes=10012
+2013-01-06T21:56:43+00:00 app[web.1]: [06/Jan/2013 15:56:43] "GET /map/Demo/all/ HTTP/1.1" 200 10012
+2013-01-06T21:56:43+00:00 app[web.1]: [06/Jan/2013 15:56:43] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-06T21:56:43+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=25ms service=22ms status=200 bytes=230024
+2013-01-06T21:56:43+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=6ms status=304 bytes=0
+2013-01-06T21:56:43+00:00 app[web.1]: [06/Jan/2013 15:56:43] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T21:56:45+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=25ms connect=30ms service=18ms status=404 bytes=2951
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /create_web/Demo/ HTTP/1.1" 200 8465
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=190ms status=200 bytes=8465
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=4ms status=304 bytes=0
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=6ms service=4ms status=304 bytes=0
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=4ms connect=10ms service=4ms status=304 bytes=0
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=7ms service=11ms status=304 bytes=0
+2013-01-06T21:57:20+00:00 app[web.1]: [06/Jan/2013 15:57:20] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:57:20+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=15ms connect=25ms service=7ms status=304 bytes=0
+2013-01-06T21:57:21+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=8ms status=404 bytes=2951
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=13ms connect=37ms service=213ms status=302 bytes=0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=19ms service=97ms status=200 bytes=8978
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=5ms service=4ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=2ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=7ms status=200 bytes=78716
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=3ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=10ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=2ms service=9ms status=304 bytes=0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:58:31+00:00 app[web.1]: [06/Jan/2013 15:58:31] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:58:32+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=4ms service=6ms status=404 bytes=2951
+2013-01-06T21:58:34+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=190ms status=200 bytes=10916
+2013-01-06T21:58:34+00:00 app[web.1]: [06/Jan/2013 15:58:34] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T21:58:34+00:00 app[web.1]: [06/Jan/2013 15:58:34] "GET /static/vivagraph.js HTTP/1.1" 304 0
+2013-01-06T21:58:34+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=2ms status=304 bytes=0
+2013-01-06T21:58:34+00:00 app[web.1]: [06/Jan/2013 15:58:34] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T21:58:34+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=2ms status=304 bytes=0
+2013-01-06T21:58:36+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=39ms status=404 bytes=2951
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=11ms service=68ms status=200 bytes=6011
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=6ms status=304 bytes=0
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=2ms status=304 bytes=0
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=3ms status=304 bytes=0
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:36+00:00 app[web.1]: [06/Jan/2013 15:59:36] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:36+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=6ms status=304 bytes=0
+2013-01-06T21:59:37+00:00 app[web.1]: [06/Jan/2013 15:59:37] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T21:59:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=40ms service=3ms status=304 bytes=0
+2013-01-06T21:59:38+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=3ms service=25ms status=404 bytes=2951
+2013-01-06T21:59:42+00:00 heroku[router]: at=info method=GET path=/node/Demo/George_Washington/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=7ms service=56ms status=200 bytes=6510
+2013-01-06T21:59:42+00:00 app[web.1]: [06/Jan/2013 15:59:42] "GET /node/Demo/George_Washington/ HTTP/1.1" 200 6510
+2013-01-06T21:59:42+00:00 app[web.1]: [06/Jan/2013 15:59:42] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=2ms status=304 bytes=0
+2013-01-06T21:59:43+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=2ms status=304 bytes=0
+2013-01-06T21:59:43+00:00 app[web.1]: [06/Jan/2013 15:59:43] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:44+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=8ms connect=6ms service=13ms status=404 bytes=2951
+2013-01-06T21:59:47+00:00 heroku[router]: at=info method=GET path=/node/Demo/World_War_I/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=20ms service=66ms status=200 bytes=6990
+2013-01-06T21:59:47+00:00 app[web.1]: [06/Jan/2013 15:59:47] "GET /node/Demo/World_War_I/ HTTP/1.1" 200 6990
+2013-01-06T21:59:51+00:00 app[web.1]: [06/Jan/2013 15:59:51] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T21:59:51+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=5ms connect=17ms service=6ms status=304 bytes=0
+2013-01-06T21:59:51+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=404 bytes=2951
+2013-01-06T21:59:53+00:00 heroku[router]: at=info method=GET path=/node/Demo/Great_Depression/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=89ms status=200 bytes=5496
+2013-01-06T21:59:53+00:00 app[web.1]: [06/Jan/2013 15:59:53] "GET /node/Demo/Great_Depression/ HTTP/1.1" 200 5496
+2013-01-06T21:59:58+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=7ms status=404 bytes=2951
+2013-01-06T22:00:08+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=89ms status=200 bytes=6676
+2013-01-06T22:00:08+00:00 app[web.1]: [06/Jan/2013 16:00:08] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 200 6676
+2013-01-06T22:00:09+00:00 app[web.1]: [06/Jan/2013 16:00:09] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T22:00:09+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=2ms status=304 bytes=0
+2013-01-06T22:00:10+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=9ms connect=12ms service=2ms status=304 bytes=0
+2013-01-06T22:00:10+00:00 app[web.1]: [06/Jan/2013 16:00:10] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T22:00:11+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=6ms service=8ms status=404 bytes=2951
+2013-01-06T22:00:12+00:00 app[web.1]: [06/Jan/2013 16:00:12] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-06T22:00:12+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=55ms status=200 bytes=6011
+2013-01-06T22:00:12+00:00 app[web.1]: [06/Jan/2013 16:00:12] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T22:00:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=3ms status=304 bytes=0
+2013-01-06T22:00:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=304 bytes=0
+2013-01-06T22:00:13+00:00 app[web.1]: [06/Jan/2013 16:00:13] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T22:00:14+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=5ms status=404 bytes=2951
+2013-01-06T22:00:15+00:00 heroku[router]: at=info method=GET path=/node/Demo/Supreme_Court/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=6ms service=87ms status=200 bytes=5043
+2013-01-06T22:00:15+00:00 app[web.1]: [06/Jan/2013 16:00:15] "GET /node/Demo/Supreme_Court/ HTTP/1.1" 200 5043
+2013-01-06T22:00:16+00:00 app[web.1]: [06/Jan/2013 16:00:16] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T22:00:16+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=10ms connect=20ms service=10ms status=304 bytes=0
+2013-01-06T22:00:17+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=11ms status=404 bytes=2951
+2013-01-06T22:17:03+00:00 app[web.1]: [06/Jan/2013 16:17:03] "GET / HTTP/1.1" 200 3869
+2013-01-06T22:17:03+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=3ms connect=17ms service=116ms status=200 bytes=3869
+2013-01-06T22:17:03+00:00 app[web.1]: [06/Jan/2013 16:17:03] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-06T22:17:03+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=0ms service=7ms status=200 bytes=6536
+2013-01-06T22:17:03+00:00 app[web.1]: [06/Jan/2013 16:17:03] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-06T22:17:03+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=9ms connect=39ms service=59ms status=200 bytes=93434
+2013-01-06T22:17:04+00:00 app[web.1]: [06/Jan/2013 16:17:04] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-06T22:17:04+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=12ms service=14ms status=200 bytes=495550
+2013-01-06T22:17:04+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=404 bytes=2951
+2013-01-06T22:17:33+00:00 heroku[router]: at=info method=GET path=/create_web host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=4ms service=2ms status=301 bytes=0
+2013-01-06T22:17:33+00:00 app[web.1]: [06/Jan/2013 16:17:33] "GET /create_web HTTP/1.1" 301 0
+2013-01-06T22:17:33+00:00 app[web.1]: [06/Jan/2013 16:17:33] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T22:17:33+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=1ms connect=1ms service=53ms status=200 bytes=4812
+2013-01-06T22:17:34+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=0ms service=6ms status=404 bytes=2951
+2013-01-06T22:52:39+00:00 app[web.1]: [06/Jan/2013 16:52:39] "GET / HTTP/1.1" 200 3869
+2013-01-06T22:52:39+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=174.254.224.25 dyno=web.1 queue=0 wait=0ms connect=1ms service=80ms status=200 bytes=3869
+2013-01-06T22:52:39+00:00 app[web.1]: [06/Jan/2013 16:52:39] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-06T22:52:39+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=174.254.224.25 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=200 bytes=93434
+2013-01-06T22:52:40+00:00 app[web.1]: [06/Jan/2013 16:52:40] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-06T22:52:40+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=174.254.224.25 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=200 bytes=6536
+2013-01-06T22:52:41+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=174.254.224.25 dyno=web.1 queue=0 wait=0ms connect=1ms service=47ms status=200 bytes=495550
+2013-01-06T22:52:41+00:00 app[web.1]: [06/Jan/2013 16:52:41] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-06T23:11:21+00:00 app[web.1]: [06/Jan/2013 17:11:21] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:11:21+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=66ms status=200 bytes=3869
+2013-01-06T23:11:22+00:00 app[web.1]: [06/Jan/2013 17:11:22] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-06T23:11:22+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=54ms status=200 bytes=495550
+2013-01-06T23:11:23+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=6ms status=404 bytes=2951
+2013-01-06T23:11:36+00:00 app[web.1]: [06/Jan/2013 17:11:36] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-06T23:11:36+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=200 bytes=6536
+2013-01-06T23:11:36+00:00 app[web.1]: [06/Jan/2013 17:11:36] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-06T23:11:36+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=4ms connect=22ms service=12ms status=200 bytes=93434
+2013-01-06T23:11:52+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=9ms service=399ms status=200 bytes=10916
+2013-01-06T23:11:52+00:00 app[web.1]: [06/Jan/2013 17:11:52] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T23:11:53+00:00 app[web.1]: [06/Jan/2013 17:11:53] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-06T23:11:53+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=11ms status=200 bytes=230024
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=200 bytes=53837
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=25ms status=200 bytes=78716
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=200 bytes=91170
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=7ms service=35ms status=200 bytes=33080
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=1ms connect=4ms service=21ms status=200 bytes=45639
+2013-01-06T23:11:54+00:00 app[web.1]: [06/Jan/2013 17:11:54] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-06T23:11:54+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=21ms service=67ms status=200 bytes=1164410
+2013-01-06T23:12:28+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=883ms status=500 bytes=91467
+2013-01-06T23:12:28+00:00 app[web.1]: [06/Jan/2013 17:12:28] "GET /map/Demo/all/ HTTP/1.1" 500 91467
+2013-01-06T23:13:26+00:00 app[web.1]: [06/Jan/2013 17:13:26] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T23:13:26+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=6ms connect=18ms service=137ms status=200 bytes=10916
+2013-01-06T23:15:11+00:00 app[web.1]: [06/Jan/2013 17:15:11] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T23:15:11+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=324ms status=200 bytes=10916
+2013-01-06T23:15:28+00:00 app[web.1]: [06/Jan/2013 17:15:28] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:15:28+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=6ms service=76ms status=200 bytes=8978
+2013-01-06T23:15:28+00:00 app[web.1]: [06/Jan/2013 17:15:28] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=13ms service=11ms status=200 bytes=78716
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=6ms service=13ms status=200 bytes=53837
+2013-01-06T23:15:29+00:00 app[web.1]: [06/Jan/2013 17:15:29] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-06T23:15:29+00:00 app[web.1]: [06/Jan/2013 17:15:29] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-06T23:15:29+00:00 app[web.1]: [06/Jan/2013 17:15:29] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-06T23:15:29+00:00 app[web.1]: [06/Jan/2013 17:15:29] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=6ms service=10ms status=200 bytes=33080
+2013-01-06T23:15:29+00:00 app[web.1]: [06/Jan/2013 17:15:29] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=50ms status=200 bytes=1164410
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=3ms service=17ms status=200 bytes=45639
+2013-01-06T23:15:29+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=1ms connect=3ms service=8ms status=200 bytes=91170
+2013-01-06T23:16:13+00:00 app[web.1]: [06/Jan/2013 17:16:13] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T23:16:13+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=2ms connect=9ms service=48ms status=200 bytes=4812
+2013-01-06T23:16:28+00:00 heroku[router]: at=info method=POST path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=3ms connect=17ms service=173ms status=500 bytes=96938
+2013-01-06T23:16:28+00:00 app[web.1]: [06/Jan/2013 17:16:28] "POST /create_web/ HTTP/1.1" 500 96938
+2013-01-06T23:16:31+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=326ms status=500 bytes=91680
+2013-01-06T23:16:31+00:00 app[web.1]: [06/Jan/2013 17:16:31] "GET /map/Demo/historical_figures/ HTTP/1.1" 500 91680
+2013-01-06T23:16:51+00:00 app[web.1]: [06/Jan/2013 17:16:51] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T23:16:51+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=69ms status=200 bytes=4812
+2013-01-06T23:17:06+00:00 heroku[router]: at=info method=GET path=/map/Demo/international/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=353ms status=500 bytes=91610
+2013-01-06T23:17:06+00:00 app[web.1]: [06/Jan/2013 17:17:06] "GET /map/Demo/international/ HTTP/1.1" 500 91610
+2013-01-06T23:17:10+00:00 heroku[router]: at=info method=GET path=/map/Demo/war/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=125ms status=200 bytes=8655
+2013-01-06T23:17:10+00:00 app[web.1]: [06/Jan/2013 17:17:10] "GET /map/Demo/war/ HTTP/1.1" 200 8655
+2013-01-06T23:17:16+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=1ms connect=2ms service=69ms status=200 bytes=3869
+2013-01-06T23:17:16+00:00 app[web.1]: [06/Jan/2013 17:17:16] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:17:16+00:00 heroku[router]: at=info method=GET path=/map/Demo/war/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=180ms status=200 bytes=8655
+2013-01-06T23:17:16+00:00 app[web.1]: [06/Jan/2013 17:17:16] "GET /map/Demo/war/ HTTP/1.1" 200 8655
+2013-01-06T23:17:19+00:00 heroku[router]: at=info method=GET path=/map/Demo/legal/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=13ms service=406ms status=500 bytes=91495
+2013-01-06T23:17:19+00:00 app[web.1]: [06/Jan/2013 17:17:19] "GET /map/Demo/legal/ HTTP/1.1" 500 91495
+2013-01-06T23:17:20+00:00 app[web.1]: [06/Jan/2013 17:17:20] "GET /map/ HTTP/1.1" 500 130212
+2013-01-06T23:17:20+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=5ms connect=10ms service=962ms status=500 bytes=130212
+2013-01-06T23:17:28+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=350ms status=500 bytes=91490
+2013-01-06T23:17:28+00:00 app[web.1]: [06/Jan/2013 17:17:28] "GET /create_web/Demo/ HTTP/1.1" 500 91490
+2013-01-06T23:17:33+00:00 app[web.1]: [06/Jan/2013 17:17:33] "GET /map/Demo/economic/ HTTP/1.1" 200 6713
+2013-01-06T23:17:33+00:00 heroku[router]: at=info method=GET path=/map/Demo/economic/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=94ms status=200 bytes=6713
+2013-01-06T23:17:38+00:00 app[web.1]: [06/Jan/2013 17:17:38] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-06T23:17:38+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=87ms status=200 bytes=6748
+2013-01-06T23:17:41+00:00 app[web.1]: [06/Jan/2013 17:17:41] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:17:41+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=53ms status=200 bytes=3869
+2013-01-06T23:17:42+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=75ms status=200 bytes=6748
+2013-01-06T23:17:42+00:00 app[web.1]: [06/Jan/2013 17:17:42] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-06T23:17:46+00:00 app[web.1]: [06/Jan/2013 17:17:46] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T23:17:46+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=4ms connect=11ms service=129ms status=200 bytes=10916
+2013-01-06T23:17:50+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=87ms status=200 bytes=6748
+2013-01-06T23:17:50+00:00 app[web.1]: [06/Jan/2013 17:17:50] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-06T23:17:51+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=4ms service=53ms status=200 bytes=4812
+2013-01-06T23:17:51+00:00 app[web.1]: [06/Jan/2013 17:17:51] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T23:18:07+00:00 app[web.1]: [06/Jan/2013 17:18:07] "POST /create_web/ HTTP/1.1" 500 96935
+2013-01-06T23:18:07+00:00 heroku[router]: at=info method=POST path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=7ms connect=11ms service=165ms status=500 bytes=96935
+2013-01-06T23:18:12+00:00 app[web.1]: [06/Jan/2013 17:18:12] "GET /create_web/Demo/ HTTP/1.1" 500 90929
+2013-01-06T23:18:12+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=366ms status=500 bytes=90929
+2013-01-06T23:18:14+00:00 app[web.1]: [06/Jan/2013 17:18:14] "GET /create_web/ HTTP/1.1" 500 131406
+2013-01-06T23:18:14+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=3ms connect=18ms service=1183ms status=500 bytes=131406
+2013-01-06T23:18:18+00:00 app[web.1]: [06/Jan/2013 17:18:18] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T23:18:18+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=65ms status=200 bytes=4812
+2013-01-06T23:18:21+00:00 heroku[router]: at=info method=GET path=/create_web/Gibbons_v_Ogden/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=124ms status=200 bytes=5263
+2013-01-06T23:18:21+00:00 app[web.1]: [06/Jan/2013 17:18:21] "GET /create_web/Gibbons_v_Ogden/ HTTP/1.1" 200 5263
+2013-01-06T23:18:23+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=89ms status=200 bytes=8978
+2013-01-06T23:18:23+00:00 app[web.1]: [06/Jan/2013 17:18:23] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:18:28+00:00 app[web.1]: [06/Jan/2013 17:18:28] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:18:28+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=9ms service=74ms status=200 bytes=8978
+2013-01-06T23:18:54+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=403 bytes=2282
+2013-01-06T23:18:54+00:00 app[web.1]: [06/Jan/2013 17:18:54] "POST /create_web/Demo/ HTTP/1.1" 403 2282
+2013-01-06T23:19:14+00:00 app[web.1]: [06/Jan/2013 17:19:14] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:19:14+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=76ms status=200 bytes=8978
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=4ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=78ms service=33ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=1ms connect=9ms service=5ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17
+:19:15] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 app[web.1]: [06/Jan/2013 17:19:15] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=2ms connect=4ms service=9ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=8ms connect=4ms service=24ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=4ms status=304 bytes=0
+2013-01-06T23:19:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=9ms status=304 bytes=0
+2013-01-06T23:19:18+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=0ms service=3ms status=403 bytes=2282
+2013-01-06T23:19:18+00:00 app[web.1]: [06/Jan/2013 17:19:18] "POST /create_web/Demo/ HTTP/1.1" 403 2282
+2013-01-06T23:20:52+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=1ms service=4ms status=403 bytes=2282
+2013-01-06T23:20:52+00:00 app[web.1]: [06/Jan/2013 17:20:52] "POST /create_web/Demo/ HTTP/1.1" 403 2282
+2013-01-06T23:22:27+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=1ms connect=3ms service=4ms status=403 bytes=2282
+2013-01-06T23:22:27+00:00 app[web.1]: [06/Jan/2013 17:22:27] "POST /create_web/Demo/ HTTP/1.1" 403 2282
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=99ms status=200 bytes=8978
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=5ms service=6ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=12ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=6ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=9ms status=304 bytes=0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 app[web.1]: [06/Jan/2013 17:23:24] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-06T23:23:24+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-06T23:23:30+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=307ms status=500 bytes=62991
+2013-01-06T23:23:30+00:00 app[web.1]: [06/Jan/2013 17:23:30] "POST /create_web/Demo/ HTTP/1.1" 500 62991
+2013-01-06T23:23:38+00:00 app[web.1]: [06/Jan/2013 17:23:38] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:23:38+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=74.98.165.126 dyno=web.1 queue=0 wait=0ms connect=1ms service=81ms status=200 bytes=8978
+2013-01-06T23:25:23+00:00 app[web.1]: [06/Jan/2013 17:25:23] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:25:23+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=113ms status=200 bytes=8978
+2013-01-06T23:25:27+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=75ms status=200 bytes=5607
+2013-01-06T23:25:27+00:00 app[web.1]: [06/Jan/2013 17:25:27] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-06T23:25:28+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-06T23:25:28+00:00 app[web.1]: [06/Jan/2013 17:25:28] "GET /static/vivagraph.js HTTP/1.1" 304 0
+2013-01-06T23:25:33+00:00 app[web.1]: [06/Jan/2013 17:25:33] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-06T23:25:33+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=3ms service=86ms status=200 bytes=5607
+2013-01-06T23:25:36+00:00 app[web.1]: [06/Jan/2013 17:25:36] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:25:36+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=81ms status=200 bytes=3869
+2013-01-06T23:25:37+00:00 app[web.1]: [06/Jan/2013 17:25:37] "GET /static/background.jpg HTTP/1.1" 304 0
+2013-01-06T23:25:37+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=4ms service=5ms status=304 bytes=0
+2013-01-06T23:25:40+00:00 app[web.1]: [06/Jan/2013 17:25:40] "GET /create_web HTTP/1.1" 301 0
+2013-01-06T23:25:40+00:00 heroku[router]: at=info method=GET path=/create_web host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=301 bytes=0
+2013-01-06T23:25:40+00:00 app[web.1]: [06/Jan/2013 17:25:40] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-06T23:25:40+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=1ms connect=6ms service=66ms status=200 bytes=4812
+2013-01-06T23:25:52+00:00 app[web.1]: [06/Jan/2013 17:25:52] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-06T23:25:52+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=128.112.139.195 dyno=web.1 queue=0 wait=0ms connect=6ms service=117ms status=200 bytes=8978
+2013-01-06T23:36:19+00:00 app[web.1]: [06/Jan/2013 17:36:19] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:36:19+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=174.255.116.68 dyno=web.1 queue=0 wait=0ms connect=1ms service=102ms status=200 bytes=3869
+2013-01-06T23:36:19+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=174.255.116.68 dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=200 bytes=93434
+2013-01-06T23:36:19+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=174.255.116.68 dyno=web.1 queue=0 wait=0ms connect=6ms service=5ms status=200 bytes=6536
+2013-01-06T23:36:19+00:00 app[web.1]: [06/Jan/2013 17:36:19] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-06T23:36:19+00:00 app[web.1]: [06/Jan/2013 17:36:19] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-06T23:36:20+00:00 app[web.1]: [06/Jan/2013 17:36:20] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-06T23:36:20+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=174.255.116.68 dyno=web.1 queue=0 wait=0ms connect=1ms service=17ms status=200 bytes=495550
+2013-01-06T23:36:47+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=0ms service=84ms status=200 bytes=4306
+2013-01-06T23:36:47+00:00 app[web.1]: [06/Jan/2013 17:36:47] "GET /map/ HTTP/1.1" 200 4306
+2013-01-06T23:37:01+00:00 app[web.1]: [06/Jan/2013 17:37:01] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-06T23:37:01+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=4ms service=192ms status=200 bytes=10916
+2013-01-06T23:37:02+00:00 app[web.1]: [06/Jan/2013 17:37:02] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-06T23:37:02+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=200 bytes=230024
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=200 bytes=33080
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=1ms connect=6ms service=8ms status=200 bytes=91170
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=2ms connect=1ms service=6ms status=200 bytes=53837
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=0ms service=7ms status=200 bytes=78716
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-06T23:37:03+00:00 app[web.1]: [06/Jan/2013 17:37:03] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=0ms service=51ms status=200 bytes=1164410
+2013-01-06T23:37:03+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=0ms service=6ms status=200 bytes=45639
+2013-01-06T23:37:17+00:00 app[web.1]: [06/Jan/2013 17:37:17] "GET / HTTP/1.1" 200 3869
+2013-01-06T23:37:17+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=0ms service=72ms status=200 bytes=3869
+2013-01-06T23:37:29+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=12ms service=80ms status=200 bytes=4306
+2013-01-06T23:37:29+00:00 app[web.1]: [06/Jan/2013 17:37:29] "GET /map/ HTTP/1.1" 200 4306
+2013-01-06T23:37:36+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.244.28 dyno=web.1 queue=0 wait=0ms connect=1ms service=247ms status=200 bytes=10916
+2013-01-06T23:37:36+00:00 app[web.1]: [06/Jan/2013 17:37:36] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T00:24:10+00:00 app[web.1]: [06/Jan/2013 18:24:10] "GET / HTTP/1.1" 200 3869
+2013-01-07T00:24:10+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=16ms connect=45ms service=231ms status=200 bytes=3869
+2013-01-07T00:24:11+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=3ms service=26ms status=304 bytes=0
+2013-01-07T00:24:11+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=12ms service=7ms status=304 bytes=0
+2013-01-07T00:24:11+00:00 app[web.1]: [06/Jan/2013 18:24:11] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-07T00:24:11+00:00 app[web.1]: [06/Jan/2013 18:24:11] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-07T00:24:11+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=2ms service=23ms status=304 bytes=0
+2013-01-07T00:24:11+00:00 app[web.1]: [06/Jan/2013 18:24:11] "GET /static/background.jpg HTTP/1.1" 304 0
+2013-01-07T00:24:21+00:00 heroku[router]: at=info method=GET path=/create_web host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=301 bytes=0
+2013-01-07T00:24:21+00:00 app[web.1]: [06/Jan/2013 18:24:21] "GET /create_web HTTP/1.1" 301 0
+2013-01-07T00:24:22+00:00 app[web.1]: [06/Jan/2013 18:24:22] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-07T00:24:22+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=2ms service=55ms status=200 bytes=4812
+2013-01-07T00:24:28+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=63ms status=200 bytes=3869
+2013-01-07T00:24:28+00:00 app[web.1]: [06/Jan/2013 18:24:28] "GET / HTTP/1.1" 200 3869
+2013-01-07T00:24:28+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=7ms status=200 bytes=6536
+2013-01-07T00:24:28+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=200 bytes=93434
+2013-01-07T00:24:28+00:00 app[web.1]: [06/Jan/2013 18:24:28] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T00:24:28+00:00 app[web.1]: [06/Jan/2013 18:24:28] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T00:24:28+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=13ms status=200 bytes=495550
+2013-01-07T00:24:28+00:00 app[web.1]: [06/Jan/2013 18:24:28] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T00:24:36+00:00 heroku[router]: at=info method=GET path=/map host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=5ms connect=6ms service=3ms status=301 bytes=0
+2013-01-07T00:24:36+00:00 app[web.1]: [06/Jan/2013 18:24:36] "GET /map HTTP/1.1" 301 0
+2013-01-07T00:24:36+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=2ms service=53ms status=200 bytes=4306
+2013-01-07T00:24:36+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=8ms connect=21ms service=11ms status=404 bytes=2951
+2013-01-07T00:24:36+00:00 app[web.1]: [06/Jan/2013 18:24:36] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T00:24:38+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=4ms service=9ms status=404 bytes=2951
+2013-01-07T00:24:38+00:00 heroku[router]: at=info method=GET path=/create_web/Gibbons_v_Ogden/ host=historyonline.herokuapp.com fwd=108.64.228.133 dyno=web.1 queue=0 wait=0ms connect=2ms service=75ms status=200 bytes=5263
+2013-01-07T00:24:38+00:00 app[web.1]: [06/Jan/2013 18:24:38] "GET /create_web/Gibbons_v_Ogden/ HTTP/1.1" 200 5263
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=134ms status=200 bytes=10916
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=8ms status=200 bytes=230024
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=9ms status=200 bytes=78716
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=5ms service=6ms status=200 bytes=33080
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=12ms status=200 bytes=91170
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-07T00:24:45+00:00 app[web.1]: [06/Jan/2013 18:24:45] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=19ms status=200 bytes=1164410
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=1ms connect=2ms service=16ms status=200 bytes=45639
+2013-01-07T00:24:45+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=15ms status=200 bytes=53837
+2013-01-07T00:24:46+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=1ms connect=2ms service=5ms status=404 bytes=2951
+2013-01-07T00:24:51+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=85ms status=200 bytes=6748
+2013-01-07T00:24:51+00:00 app[web.1]: [06/Jan/2013 18:24:51] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-07T00:24:52+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=2ms service=25ms status=404 bytes=2951
+2013-01-07T00:25:02+00:00 heroku[router]: at=info method=GET path=/map/Demo/international/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=109ms status=200 bytes=8520
+2013-01-07T00:25:02+00:00 app[web.1]: [06/Jan/2013 18:25:02] "GET /map/Demo/international/ HTTP/1.1" 200 8520
+2013-01-07T00:25:03+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=2ms service=9ms status=404 bytes=2951
+2013-01-07T00:25:10+00:00 heroku[router]: at=info method=GET path=/node/Demo/World_War_I/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=5ms connect=7ms service=119ms status=200 bytes=6990
+2013-01-07T00:25:10+00:00 app[web.1]: [06/Jan/2013 18:25:10] "GET /node/Demo/World_War_I/ HTTP/1.1" 200 6990
+2013-01-07T00:25:11+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=6ms status=404 bytes=2951
+2013-01-07T00:25:13+00:00 app[web.1]: [06/Jan/2013 18:25:13] "GET /node/Demo/Great_Depression/ HTTP/1.1" 200 5496
+2013-01-07T00:25:13+00:00 heroku[router]: at=info method=GET path=/node/Demo/Great_Depression/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=80ms status=200 bytes=5496
+2013-01-07T00:25:14+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=1ms service=6ms status=404 bytes=2951
+2013-01-07T00:25:20+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=83ms status=200 bytes=4306
+2013-01-07T00:25:20+00:00 app[web.1]: [06/Jan/2013 18:25:20] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T00:25:20+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=5ms status=404 bytes=2951
+2013-01-07T00:25:25+00:00 app[web.1]: [06/Jan/2013 18:25:25] "GET /create_web/ HTTP/1.1" 200 4812
+2013-01-07T00:25:25+00:00 heroku[router]: at=info method=GET path=/create_web/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=69ms status=200 bytes=4812
+2013-01-07T00:25:26+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=0ms connect=0ms service=5ms status=404 bytes=2951
+2013-01-07T00:26:01+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=4ms connect=6ms service=104ms status=200 bytes=8978
+2013-01-07T00:26:01+00:00 app[web.1]: [06/Jan/2013 18:26:01] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-07T00:26:02+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.250.24 dyno=web.1 queue=0 wait=1ms connect=3ms service=5ms status=404 bytes=2951
+2013-01-07T01:00:14+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=244ms status=200 bytes=10916
+2013-01-07T01:00:14+00:00 app[web.1]: [06/Jan/2013 19:00:14] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=6ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=11ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /static/vivagraph.js HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=4ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=5ms service=6ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=18ms service=5ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=12ms service=7ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=7ms status=304 bytes=0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:15+00:00 app[web.1]: [06/Jan/2013 19:00:15] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:16+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=23ms status=404 bytes=2951
+2013-01-07T01:00:44+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=94ms status=200 bytes=3869
+2013-01-07T01:00:44+00:00 app[web.1]: [06/Jan/2013 19:00:44] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:00:44+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=304 bytes=0
+2013-01-07T01:00:44+00:00 app[web.1]: [06/Jan/2013 19:00:44] "GET /static/background.jpg HTTP/1.1" 304 0
+2013-01-07T01:00:47+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=23ms status=404 bytes=2951
+2013-01-07T01:03:24+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=17ms connect=24ms service=69ms status=200 bytes=3869
+2013-01-07T01:03:24+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=200 bytes=6536
+2013-01-07T01:03:24+00:00 app[web.1]: [06/Jan/2013 19:03:24] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T01:03:24+00:00 app[web.1]: [06/Jan/2013 19:03:24] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:03:24+00:00 app[web.1]: [06/Jan/2013 19:03:24] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T01:03:24+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=8ms connect=18ms service=24ms status=200 bytes=93434
+2013-01-07T01:03:24+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=14ms status=200 bytes=495550
+2013-01-07T01:03:24+00:00 app[web.1]: [06/Jan/2013 19:03:24] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:03:25+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=19ms connect=16ms service=11ms status=404 bytes=2951
+2013-01-07T01:03:50+00:00 heroku[router]: at=info method=GET path=/map host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=301 bytes=0
+2013-01-07T01:03:50+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=60ms status=200 bytes=4306
+2013-01-07T01:03:50+00:00 app[web.1]: [06/Jan/2013 19:03:50] "GET /map HTTP/1.1" 301 0
+2013-01-07T01:03:50+00:00 app[web.1]: [06/Jan/2013 19:03:50] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T01:04:16+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=92ms status=200 bytes=5607
+2013-01-07T01:04:16+00:00 app[web.1]: [06/Jan/2013 19:04:16] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-07T01:04:16+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=12ms connect=37ms service=28ms status=200 bytes=230024
+2013-01-07T01:04:16+00:00 app[web.1]: [06/Jan/2013 19:04:16] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=6ms connect=17ms service=153ms status=200 bytes=10916
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=13ms status=200 bytes=78716
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=4ms service=15ms status=200 bytes=53837
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=9ms service=22ms status=200 bytes=33080
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=6ms service=9ms status=200 bytes=91170
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=26ms status=200 bytes=1164410
+2013-01-07T01:04:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=10ms status=200 bytes=45639
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-07T01:04:23+00:00 app[web.1]: [06/Jan/2013 19:04:23] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-07T01:04:29+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=216ms status=200 bytes=10916
+2013-01-07T01:04:29+00:00 app[web.1]: [06/Jan/2013 19:04:29] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:04:31+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=12ms status=404 bytes=2951
+2013-01-07T01:04:35+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=196ms status=200 bytes=10916
+2013-01-07T01:04:35+00:00 app[web.1]: [06/Jan/2013 19:04:35] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:04:37+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=11ms status=404 bytes=2951
+2013-01-07T01:04:40+00:00 app[web.1]: [06/Jan/2013 19:04:40] "GET /map/Demo/legal/ HTTP/1.1" 200 7212
+2013-01-07T01:04:40+00:00 heroku[router]: at=info method=GET path=/map/Demo/legal/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=31ms service=139ms status=200 bytes=7212
+2013-01-07T01:04:41+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=15ms status=404 bytes=2951
+2013-01-07T01:04:43+00:00 heroku[router]: at=info method=GET path=/map/Demo/war/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=209ms status=200 bytes=8655
+2013-01-07T01:04:43+00:00 app[web.1]: [06/Jan/2013 19:04:43] "GET /map/Demo/war/ HTTP/1.1" 200 8655
+2013-01-07T01:04:47+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=11ms service=10ms status=404 bytes=2951
+2013-01-07T01:04:50+00:00 app[web.1]: [06/Jan/2013 19:04:50] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-07T01:04:50+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=105ms status=200 bytes=6748
+2013-01-07T01:04:53+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=7ms service=8ms status=404 bytes=2951
+2013-01-07T01:04:54+00:00 heroku[router]: at=info method=GET path=/map/Demo/international/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=167ms status=200 bytes=8520
+2013-01-07T01:04:54+00:00 app[web.1]: [06/Jan/2013 19:04:54] "GET /map/Demo/international/ HTTP/1.1" 200 8520
+2013-01-07T01:04:56+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=404 bytes=2951
+2013-01-07T01:04:59+00:00 heroku[router]: at=info method=GET path=/map/Demo/economic/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=77ms status=200 bytes=6713
+2013-01-07T01:04:59+00:00 app[web.1]: [06/Jan/2013 19:04:59] "GET /map/Demo/economic/ HTTP/1.1" 200 6713
+2013-01-07T01:04:59+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=14ms status=404 bytes=2951
+2013-01-07T01:05:25+00:00 heroku[router]: at=info method=GET path=/node/Demo/Great_Depression/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=13ms service=114ms status=200 bytes=5496
+2013-01-07T01:05:25+00:00 app[web.1]: [06/Jan/2013 19:05:25] "GET /node/Demo/Great_Depression/ HTTP/1.1" 200 5496
+2013-01-07T01:05:27+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=11ms service=42ms status=404 bytes=2951
+2013-01-07T01:05:37+00:00 heroku[router]: at=info method=GET path=/node/Demo/World_War_I/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=145ms status=200 bytes=6990
+2013-01-07T01:05:37+00:00 app[web.1]: [06/Jan/2013 19:05:37] "GET /node/Demo/World_War_I/ HTTP/1.1" 200 6990
+2013-01-07T01:05:38+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=8ms status=404 bytes=2951
+2013-01-07T01:05:50+00:00 heroku[router]: at=info method=GET path=/node/Demo/World_War_I/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=7ms service=98ms status=200 bytes=6990
+2013-01-07T01:05:50+00:00 app[web.1]: [06/Jan/2013 19:05:50] "GET /node/Demo/World_War_I/ HTTP/1.1" 200 6990
+2013-01-07T01:06:05+00:00 app[web.1]: [06/Jan/2013 19:06:05] "GET /node/Demo/Great_Depression/ HTTP/1.1" 200 5496
+2013-01-07T01:06:05+00:00 heroku[router]: at=info method=GET path=/node/Demo/Great_Depression/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=106ms status=200 bytes=5496
+2013-01-07T01:06:10+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=98ms status=200 bytes=6676
+2013-01-07T01:06:10+00:00 app[web.1]: [06/Jan/2013 19:06:10] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 200 6676
+2013-01-07T01:06:11+00:00 heroku[router]: at=info method=GET path=/node/Demo/George_Washington/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=85ms status=200 bytes=6510
+2013-01-07T01:06:11+00:00 app[web.1]: [06/Jan/2013 19:06:11] "GET /node/Demo/George_Washington/ HTTP/1.1" 200 6510
+2013-01-07T01:06:11+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=75ms status=200 bytes=6676
+2013-01-07T01:06:11+00:00 app[web.1]: [06/Jan/2013 19:06:11] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 200 6676
+2013-01-07T01:06:13+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=9ms service=177ms status=200 bytes=6011
+2013-01-07T01:06:13+00:00 app[web.1]: [06/Jan/2013 19:06:13] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-07T01:06:39+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=105ms status=200 bytes=3869
+2013-01-07T01:06:39+00:00 app[web.1]: [06/Jan/2013 19:06:39] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:06:39+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=4ms connect=13ms service=6ms status=200 bytes=6536
+2013-01-07T01:06:39+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=16ms status=200 bytes=93434
+2013-01-07T01:06:39+00:00 app[web.1]: [06/Jan/2013 19:06:39] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T01:06:39+00:00 app[web.1]: [06/Jan/2013 19:06:39] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T01:06:40+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=2ms connect=9ms service=37ms status=200 bytes=495550
+2013-01-07T01:06:40+00:00 app[web.1]: [06/Jan/2013 19:06:40] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:06:40+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=404 bytes=2951
+2013-01-07T01:06:55+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=62ms status=200 bytes=3869
+2013-01-07T01:06:55+00:00 app[web.1]: [06/Jan/2013 19:06:55] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:06:55+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=13ms status=200 bytes=93434
+2013-01-07T01:06:55+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=1ms service=7ms status=200 bytes=6536
+2013-01-07T01:06:55+00:00 app[web.1]: [06/Jan/2013 19:06:55] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T01:06:55+00:00 app[web.1]: [06/Jan/2013 19:06:55] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T01:06:56+00:00 app[web.1]: [06/Jan/2013 19:06:56] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:06:56+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=16ms service=27ms status=200 bytes=495550
+2013-01-07T01:06:56+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=101ms status=200 bytes=3869
+2013-01-07T01:06:56+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=200 bytes=6536
+2013-01-07T01:06:56+00:00 app[web.1]: [06/Jan/2013 19:06:56] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T01:06:56+00:00 app[web.1]: [06/Jan/2013 19:06:56] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:06:57+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=18ms service=68ms status=200 bytes=93434
+2013-01-07T01:06:57+00:00 app[web.1]: [06/Jan/2013 19:06:57] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T01:06:57+00:00 app[web.1]: [06/Jan/2013 19:06:57] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:06:57+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=41ms status=200 bytes=495550
+2013-01-07T01:06:57+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=10ms status=404 bytes=2951
+2013-01-07T01:06:59+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=6ms service=9ms status=404 bytes=2951
+2013-01-07T01:07:04+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=230ms status=200 bytes=10916
+2013-01-07T01:07:04+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=16ms status=200 bytes=230024
+2013-01-07T01:07:04+00:00 app[web.1]: [06/Jan/2013 19:07:04] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:07:04+00:00 app[web.1]: [06/Jan/2013 19:07:04] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=200 bytes=45639
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=21ms status=200 bytes=53837
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=22ms service=20ms status=200 bytes=33080
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=23ms service=46ms status=200 bytes=91170
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=14ms service=85ms status=200 bytes=1164410
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=77ms status=200 bytes=78716
+2013-01-07T01:07:05+00:00 app[web.1]: [06/Jan/2013 19:07:05] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-07T01:07:05+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=404 bytes=2951
+2013-01-07T01:07:07+00:00 app[web.1]: [06/Jan/2013 19:07:07] "GET /map HTTP/1.1" 301 0
+2013-01-07T01:07:07+00:00 heroku[router]: at=info method=GET path=/map host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=12ms connect=30ms service=11ms status=301 bytes=0
+2013-01-07T01:07:07+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=70ms status=200 bytes=4306
+2013-01-07T01:07:07+00:00 app[web.1]: [06/Jan/2013 19:07:07] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T01:07:08+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=4ms connect=6ms service=10ms status=404 bytes=2951
+2013-01-07T01:07:11+00:00 app[web.1]: [06/Jan/2013 19:07:11] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:07:11+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=200 bytes=230024
+2013-01-07T01:07:11+00:00 app[web.1]: [06/Jan/2013 19:07:11] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=200 bytes=53837
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=4ms status=200 bytes=78716
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=8ms status=200 bytes=91170
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=200 bytes=45639
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=16ms status=200 bytes=33080
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=34ms status=200 bytes=1164410
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-07T01:07:11+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=230ms status=200 bytes=10916
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-07T01:07:12+00:00 app[web.1]: [06/Jan/2013 19:07:12] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-07T01:07:12+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=404 bytes=2951
+2013-01-07T01:07:19+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=82ms status=200 bytes=8978
+2013-01-07T01:07:19+00:00 app[web.1]: [06/Jan/2013 19:07:19] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-07T01:07:20+00:00 app[web.1]: [06/Jan/2013 19:07:20] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-07T01:07:20+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=65ms status=200 bytes=5607
+2013-01-07T01:07:20+00:00 app[web.1]: [06/Jan/2013 19:07:20] "GET /static/vivagraph.js HTTP/1.1" 200 230024
+2013-01-07T01:07:20+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=21ms status=200 bytes=230024
+2013-01-07T01:07:22+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=9ms status=404 bytes=2951
+2013-01-07T01:07:29+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=84ms status=200 bytes=5607
+2013-01-07T01:07:29+00:00 app[web.1]: [06/Jan/2013 19:07:29] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-07T01:07:29+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=12ms status=404 bytes=2951
+2013-01-07T01:07:32+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=18ms connect=36ms service=88ms status=200 bytes=5607
+2013-01-07T01:07:32+00:00 app[web.1]: [06/Jan/2013 19:07:32] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-07T01:07:32+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=1ms connect=6ms service=8ms status=404 bytes=2951
+2013-01-07T01:07:36+00:00 heroku[router]: at=info method=GET path=/map/Demo/economic/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=78ms status=200 bytes=6713
+2013-01-07T01:07:36+00:00 app[web.1]: [06/Jan/2013 19:07:36] "GET /map/Demo/economic/ HTTP/1.1" 200 6713
+2013-01-07T01:07:37+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=404 bytes=2951
+2013-01-07T01:07:38+00:00 heroku[router]: at=info method=GET path=/create_web/Gibbons_v_Ogden/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=172ms status=200 bytes=5263
+2013-01-07T01:07:38+00:00 app[web.1]: [06/Jan/2013 19:07:38] "GET /create_web/Gibbons_v_Ogden/ HTTP/1.1" 200 5263
+2013-01-07T01:07:38+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=404 bytes=2951
+2013-01-07T01:07:41+00:00 heroku[router]: at=info method=GET path=/map/Demo/legal/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=175ms status=200 bytes=7212
+2013-01-07T01:07:41+00:00 app[web.1]: [06/Jan/2013 19:07:41] "GET /map/Demo/legal/ HTTP/1.1" 200 7212
+2013-01-07T01:07:41+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=404 bytes=2951
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=122ms status=200 bytes=10916
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=4ms service=13ms status=200 bytes=33080
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=17ms status=200 bytes=78716
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=4ms service=16ms status=200 bytes=53837
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=200 bytes=45639
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 200 33080
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 200 78716
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 200 53837
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 200 91170
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 200 45639
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=50ms status=200 bytes=1164410
+2013-01-07T01:07:42+00:00 app[web.1]: [06/Jan/2013 19:07:42] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 200 1164410
+2013-01-07T01:07:42+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=21ms status=200 bytes=91170
+2013-01-07T01:07:43+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=404 bytes=2951
+2013-01-07T01:07:45+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=164ms status=200 bytes=10916
+2013-01-07T01:07:45+00:00 app[web.1]: [06/Jan/2013 19:07:45] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:07:54+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=102ms status=200 bytes=8978
+2013-01-07T01:07:54+00:00 app[web.1]: [06/Jan/2013 19:07:54] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-07T01:07:59+00:00 heroku[router]: at=info method=GET path=/map/Demo/economic/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=134ms status=200 bytes=6713
+2013-01-07T01:07:59+00:00 app[web.1]: [06/Jan/2013 19:07:59] "GET /map/Demo/economic/ HTTP/1.1" 200 6713
+2013-01-07T01:07:59+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=404 bytes=2951
+2013-01-07T01:08:03+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=1ms connect=4ms service=137ms status=200 bytes=10916
+2013-01-07T01:08:03+00:00 app[web.1]: [06/Jan/2013 19:08:03] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:08:04+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=404 bytes=2951
+2013-01-07T01:08:12+00:00 heroku[router]: at=info method=GET path=/map/Demo/historical_figures/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=121ms status=200 bytes=6748
+2013-01-07T01:08:12+00:00 app[web.1]: [06/Jan/2013 19:08:12] "GET /map/Demo/historical_figures/ HTTP/1.1" 200 6748
+2013-01-07T01:08:13+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=13ms connect=18ms service=16ms status=404 bytes=2951
+2013-01-07T01:08:21+00:00 app[web.1]: [06/Jan/2013 19:08:21] "GET /node/Demo/George_Washington/ HTTP/1.1" 200 6510
+2013-01-07T01:08:21+00:00 heroku[router]: at=info method=GET path=/node/Demo/George_Washington/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=89ms status=200 bytes=6510
+2013-01-07T01:08:21+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=5ms service=44ms status=404 bytes=2951
+2013-01-07T01:08:22+00:00 heroku[router]: at=info method=GET path=/node/Demo/Supreme_Court/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=77ms status=200 bytes=5043
+2013-01-07T01:08:22+00:00 app[web.1]: [06/Jan/2013 19:08:22] "GET /node/Demo/Supreme_Court/ HTTP/1.1" 200 5043
+2013-01-07T01:08:24+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=64ms status=200 bytes=6011
+2013-01-07T01:08:24+00:00 app[web.1]: [06/Jan/2013 19:08:24] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-07T01:08:27+00:00 heroku[router]: at=info method=GET path=/node/Demo/George_Washington/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=113ms status=200 bytes=6510
+2013-01-07T01:08:27+00:00 app[web.1]: [06/Jan/2013 19:08:27] "GET /node/Demo/George_Washington/ HTTP/1.1" 200 6510
+2013-01-07T01:08:29+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=94ms status=200 bytes=6011
+2013-01-07T01:08:29+00:00 app[web.1]: [06/Jan/2013 19:08:29] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-07T01:08:31+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=161ms status=200 bytes=10916
+2013-01-07T01:08:31+00:00 app[web.1]: [06/Jan/2013 19:08:31] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:08:31+00:00 heroku[router]: at=info method=GET path=/node/Demo/Supreme_Court/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=7ms connect=20ms service=75ms status=200 bytes=5043
+2013-01-07T01:08:31+00:00 app[web.1]: [06/Jan/2013 19:08:31] "GET /node/Demo/Supreme_Court/ HTTP/1.1" 200 5043
+2013-01-07T01:08:31+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=404 bytes=2951
+2013-01-07T01:08:33+00:00 app[web.1]: [06/Jan/2013 19:08:33] "GET /node/Demo/Constitution/ HTTP/1.1" 200 6011
+2013-01-07T01:08:33+00:00 heroku[router]: at=info method=GET path=/node/Demo/Constitution/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=68ms status=200 bytes=6011
+2013-01-07T01:08:40+00:00 heroku[router]: at=info method=GET path=/map/Demo/international/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=102ms status=200 bytes=8520
+2013-01-07T01:08:40+00:00 app[web.1]: [06/Jan/2013 19:08:40] "GET /map/Demo/international/ HTTP/1.1" 200 8520
+2013-01-07T01:08:40+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=404 bytes=2951
+2013-01-07T01:08:46+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=444ms status=500 bytes=92953
+2013-01-07T01:08:46+00:00 app[web.1]: [06/Jan/2013 19:08:46] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 500 92953
+2013-01-07T01:08:46+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=12ms status=404 bytes=2951
+2013-01-07T01:08:53+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=9ms status=404 bytes=2951
+2013-01-07T01:08:55+00:00 app[web.1]: [06/Jan/2013 19:08:55] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 500 92950
+2013-01-07T01:08:55+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=404 bytes=2951
+2013-01-07T01:08:55+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=2ms connect=7ms service=314ms status=500 bytes=92950
+2013-01-07T01:09:10+00:00 app[web.1]: [06/Jan/2013 19:09:10] "GET / HTTP/1.1" 500 129832
+2013-01-07T01:09:10+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=1ms connect=12ms service=713ms status=500 bytes=129832
+2013-01-07T01:09:11+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=404 bytes=2951
+2013-01-07T01:09:15+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=1ms service=913ms status=500 bytes=130064
+2013-01-07T01:09:15+00:00 app[web.1]: [06/Jan/2013 19:09:15] "GET / HTTP/1.1" 500 130064
+2013-01-07T01:09:16+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=11ms status=404 bytes=2951
+2013-01-07T01:09:20+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=1ms connect=3ms service=66ms status=200 bytes=3869
+2013-01-07T01:09:20+00:00 app[web.1]: [06/Jan/2013 19:09:20] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:09:20+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=4ms connect=4ms service=16ms status=404 bytes=2951
+2013-01-07T01:09:24+00:00 heroku[router]: at=info method=GET path=/map host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=12ms service=4ms status=301 bytes=0
+2013-01-07T01:09:24+00:00 app[web.1]: [06/Jan/2013 19:09:24] "GET /map HTTP/1.1" 301 0
+2013-01-07T01:09:24+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=1ms service=68ms status=200 bytes=4306
+2013-01-07T01:09:24+00:00 app[web.1]: [06/Jan/2013 19:09:24] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T01:09:25+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=11ms connect=22ms service=8ms status=404 bytes=2951
+2013-01-07T01:09:27+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=0ms service=177ms status=200 bytes=10916
+2013-01-07T01:09:27+00:00 app[web.1]: [06/Jan/2013 19:09:27] "GET /map/Demo/all/ HTTP/1.1" 200 10916
+2013-01-07T01:09:28+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=13ms connect=24ms service=12ms status=404 bytes=2951
+2013-01-07T01:09:32+00:00 heroku[router]: at=info method=GET path=/node/Demo/World_War_I/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=2ms service=90ms status=200 bytes=6990
+2013-01-07T01:09:32+00:00 app[web.1]: [06/Jan/2013 19:09:32] "GET /node/Demo/World_War_I/ HTTP/1.1" 200 6990
+2013-01-07T01:09:32+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=6ms connect=15ms service=10ms status=404 bytes=2951
+2013-01-07T01:09:34+00:00 heroku[router]: at=info method=GET path=/node/Demo/Revolutionary_War/ host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=0ms connect=5ms service=79ms status=200 bytes=6676
+2013-01-07T01:09:34+00:00 app[web.1]: [06/Jan/2013 19:09:34] "GET /node/Demo/Revolutionary_War/ HTTP/1.1" 200 6676
+2013-01-07T01:09:35+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.189.65 dyno=web.1 queue=0 wait=1ms connect=4ms service=7ms status=404 bytes=2951
+2013-01-07T01:11:19+00:00 app[web.1]: [06/Jan/2013 19:11:19] "GET /create_web/Demo/ HTTP/1.1" 200 8978
+2013-01-07T01:11:19+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=97ms status=200 bytes=8978
+2013-01-07T01:11:25+00:00 app[web.1]: [06/Jan/2013 19:11:25] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-07T01:11:25+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=13ms connect=26ms service=145ms status=302 bytes=0
+2013-01-07T01:11:25+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=7ms connect=30ms service=86ms status=200 bytes=9519
+2013-01-07T01:11:25+00:00 app[web.1]: [06/Jan/2013 19:11:25] "GET /create_web/Demo/ HTTP/1.1" 200 9519
+2013-01-07T01:11:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=5ms service=20ms status=200 bytes=32891
+2013-01-07T01:11:26+00:00 app[web.1]: [06/Jan/2013 19:11:26] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 200 32891
+2013-01-07T01:12:52+00:00 app[web.1]: [06/Jan/2013 19:12:52] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-07T01:12:52+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=193ms status=302 bytes=0
+2013-01-07T01:12:52+00:00 app[web.1]: [06/Jan/2013 19:12:52] "GET /create_web/Demo/ HTTP/1.1" 200 10028
+2013-01-07T01:12:52+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=16ms service=92ms status=200 bytes=10028
+2013-01-07T01:12:52+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=19ms status=200 bytes=153618
+2013-01-07T01:12:52+00:00 app[web.1]: [06/Jan/2013 19:12:52] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 200 153618
+2013-01-07T01:12:52+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=304 bytes=0
+2013-01-07T01:12:52+00:00 app[web.1]: [06/Jan/2013 19:12:52] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:12:55+00:00 app[web.1]: [06/Jan/2013 19:12:55] "GET /map/Demo/all/ HTTP/1.1" 200 13639
+2013-01-07T01:12:55+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=158ms status=200 bytes=13639
+2013-01-07T01:12:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:12:55+00:00 app[web.1]: [06/Jan/2013 19:12:55] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:13:39+00:00 app[web.1]: [06/Jan/2013 19:13:39] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-07T01:13:39+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=7ms connect=34ms service=453ms status=302 bytes=0
+2013-01-07T01:13:40+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=3ms connect=7ms service=195ms status=200 bytes=10545
+2013-01-07T01:13:40+00:00 app[web.1]: [06/Jan/2013 19:13:40] "GET /create_web/Demo/ HTTP/1.1" 200 10545
+2013-01-07T01:13:40+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=7ms status=200 bytes=57082
+2013-01-07T01:13:40+00:00 app[web.1]: [06/Jan/2013 19:13:40] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 200 57082
+2013-01-07T01:13:40+00:00 app[web.1]: [06/Jan/2013 19:13:40] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 200 57082
+2013-01-07T01:13:40+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=7ms connect=9ms service=19ms status=200 bytes=57082
+2013-01-07T01:13:40+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=15ms status=200 bytes=32891
+2013-01-07T01:13:40+00:00 app[web.1]: [06/Jan/2013 19:13:40] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 200 32891
+2013-01-07T01:13:40+00:00 app[web.1]: [06/Jan/2013 19:13:40] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 200 153618
+2013-01-07T01:13:40+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=10ms service=21ms status=200 bytes=153618
+2013-01-07T01:13:45+00:00 app[web.1]: [06/Jan/2013 19:13:45] "GET /map/Demo/all/ HTTP/1.1" 200 15273
+2013-01-07T01:13:45+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=7ms service=158ms status=200 bytes=15273
+2013-01-07T01:13:47+00:00 app[web.1]: [06/Jan/2013 19:13:47] "GET /create_web/Demo/ HTTP/1.1" 200 10545
+2013-01-07T01:13:47+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=4ms service=105ms status=200 bytes=10545
+2013-01-07T01:13:47+00:00 app[web.1]: [06/Jan/2013 19:13:47] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 200 57082
+2013-01-07T01:13:47+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=15ms status=200 bytes=57082
+2013-01-07T01:13:47+00:00 app[web.1]: [06/Jan/2013 19:13:47] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:13:47+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=3ms service=6ms status=304 bytes=0
+2013-01-07T01:13:47+00:00 app[web.1]: [06/Jan/2013 19:13:47] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:13:47+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=6ms service=15ms status=304 bytes=0
+2013-01-07T01:14:38+00:00 heroku[router]: at=info method=GET path=/map/Demo/legal/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=7ms service=159ms status=200 bytes=7212
+2013-01-07T01:14:38+00:00 app[web.1]: [06/Jan/2013 19:14:38] "GET /map/Demo/legal/ HTTP/1.1" 200 7212
+2013-01-07T01:14:38+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=1ms service=6ms status=404 bytes=2951
+2013-01-07T01:14:40+00:00 app[web.1]: [06/Jan/2013 19:14:40] "GET /node/Demo/Supreme_Court/ HTTP/1.1" 200 5043
+2013-01-07T01:14:40+00:00 heroku[router]: at=info method=GET path=/node/Demo/Supreme_Court/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=80ms status=200 bytes=5043
+2013-01-07T01:14:41+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=404 bytes=2951
+2013-01-07T01:14:54+00:00 app[web.1]: [06/Jan/2013 19:14:54] "GET /map/Demo/all/ HTTP/1.1" 200 15273
+2013-01-07T01:14:54+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=277ms status=200 bytes=15273
+2013-01-07T01:14:54+00:00 app[web.1]: [06/Jan/2013 19:14:54] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-07T01:14:54+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=2ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /static/vivagraph.js HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=5ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=1ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=3ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=4ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=4ms connect=1ms service=4ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/supremecourt.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=22ms connect=15ms service=8ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=3ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=12ms connect=29ms service=38ms status=304 bytes=0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 app[web.1]: [06/Jan/2013 19:14:55] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-07T01:14:55+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=14ms connect=20ms service=27ms status=304 bytes=0
+2013-01-07T01:15:03+00:00 app[web.1]: [06/Jan/2013 19:15:03] "GET /node/Demo/Battle_of_Princeton/ HTTP/1.1" 200 8369
+2013-01-07T01:15:03+00:00 heroku[router]: at=info method=GET path=/node/Demo/Battle_of_Princeton/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=13ms connect=15ms service=97ms status=200 bytes=8369
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=203ms status=302 bytes=0
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "GET /create_web/Demo/ HTTP/1.1" 200 11076
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=6ms service=89ms status=200 bytes=11076
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=2ms status=304 bytes=0
+2013-01-07T01:15:23+00:00 app[web.1]: [06/Jan/2013 19:15:23] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 200 89054
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=28ms status=200 bytes=89054
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=304 bytes=0
+2013-01-07T01:15:23+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=2ms status=304 bytes=0
+2013-01-07T01:16:43+00:00 heroku[router]: at=info method=POST path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=265ms status=302 bytes=0
+2013-01-07T01:16:43+00:00 app[web.1]: [06/Jan/2013 19:16:43] "POST /create_web/Demo/ HTTP/1.1" 302 0
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/create_web/Demo/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=125ms status=200 bytes=11612
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /create_web/Demo/ HTTP/1.1" 200 11612
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=9ms service=3ms status=304 bytes=0
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=13ms service=4ms status=304 bytes=0
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=9ms service=15ms status=304 bytes=0
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:16:44+00:00 app[web.1]: [06/Jan/2013 19:16:44] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 200 11051
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=9ms service=7ms status=304 bytes=0
+2013-01-07T01:16:44+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=5ms service=8ms status=200 bytes=11051
+2013-01-07T01:16:46+00:00 app[web.1]: [06/Jan/2013 19:16:46] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:16:46+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=4ms service=120ms status=200 bytes=3869
+2013-01-07T01:16:46+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=53ms status=200 bytes=495550
+2013-01-07T01:16:46+00:00 app[web.1]: [06/Jan/2013 19:16:46] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:16:52+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=301ms status=200 bytes=18194
+2013-01-07T01:16:52+00:00 app[web.1]: [06/Jan/2013 19:16:52] "GET /map/Demo/all/ HTTP/1.1" 200 18194
+2013-01-07T01:16:52+00:00 app[web.1]: [06/Jan/2013 19:16:52] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:16:52+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=13ms service=21ms status=304 bytes=0
+2013-01-07T01:16:52+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=11ms service=7ms status=304 bytes=0
+2013-01-07T01:16:52+00:00 app[web.1]: [06/Jan/2013 19:16:52] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:17:43+00:00 app[web.1]: [06/Jan/2013 19:17:43] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:17:43+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.245.7 dyno=web.1 queue=0 wait=0ms connect=1ms service=96ms status=200 bytes=3869
+2013-01-07T01:17:43+00:00 app[web.1]: [06/Jan/2013 19:17:43] "GET /static/jlnav.js HTTP/1.1" 200 6536
+2013-01-07T01:17:43+00:00 app[web.1]: [06/Jan/2013 19:17:43] "GET /static/jQuery.js HTTP/1.1" 200 93434
+2013-01-07T01:17:43+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.245.7 dyno=web.1 queue=0 wait=0ms connect=15ms service=45ms status=200 bytes=93434
+2013-01-07T01:17:43+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.245.7 dyno=web.1 queue=0 wait=0ms connect=3ms service=6ms status=200 bytes=6536
+2013-01-07T01:17:44+00:00 heroku[router]: at=info method=GET path=/static/background.jpg host=historyonline.herokuapp.com fwd=140.180.245.7 dyno=web.1 queue=0 wait=0ms connect=1ms service=39ms status=200 bytes=495550
+2013-01-07T01:17:44+00:00 app[web.1]: [06/Jan/2013 19:17:44] "GET /static/background.jpg HTTP/1.1" 200 495550
+2013-01-07T01:18:17+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=303ms status=200 bytes=18194
+2013-01-07T01:18:17+00:00 app[web.1]: [06/Jan/2013 19:18:17] "GET /map/Demo/all/ HTTP/1.1" 200 18194
+2013-01-07T01:18:18+00:00 app[web.1]: [06/Jan/2013 19:18:18] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 200 11051
+2013-01-07T01:18:18+00:00 app[web.1]: [06/Jan/2013 19:18:18] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 200 57082
+2013-01-07T01:18:18+00:00 app[web.1]: [06/Jan/2013 19:18:18] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 200 153618
+2013-01-07T01:18:18+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=0ms service=3ms status=200 bytes=11051
+2013-01-07T01:18:18+00:00 app[web.1]: [06/Jan/2013 19:18:18] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 200 89054
+2013-01-07T01:18:18+00:00 app[web.1]: [06/Jan/2013 19:18:18] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 200 32891
+2013-01-07T01:18:18+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=200 bytes=153618
+2013-01-07T01:18:18+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=3ms service=11ms status=200 bytes=89054
+2013-01-07T01:18:18+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=200 bytes=57082
+2013-01-07T01:18:18+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=200 bytes=32891
+2013-01-07T01:18:19+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=4ms connect=9ms service=7ms status=404 bytes=2951
+2013-01-07T01:18:21+00:00 app[web.1]: [06/Jan/2013 19:18:21] "GET /node/Demo/Princeton_University/ HTTP/1.1" 200 8132
+2013-01-07T01:18:21+00:00 heroku[router]: at=info method=GET path=/node/Demo/Princeton_University/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=107ms status=200 bytes=8132
+2013-01-07T01:18:21+00:00 app[web.1]: [06/Jan/2013 19:18:21] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:18:21+00:00 app[web.1]: [06/Jan/2013 19:18:21] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:18:21+00:00 app[web.1]: [06/Jan/2013 19:18:21] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:18:21+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=3ms status=304 bytes=0
+2013-01-07T01:18:21+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=3ms status=304 bytes=0
+2013-01-07T01:18:21+00:00 app[web.1]: [06/Jan/2013 19:18:21] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:18:21+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=5ms service=3ms status=304 bytes=0
+2013-01-07T01:18:21+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=4ms status=304 bytes=0
+2013-01-07T01:18:43+00:00 app[web.1]: [06/Jan/2013 19:18:43] "GET /node/Demo/Shirley_Tilghman/ HTTP/1.1" 200 5878
+2013-01-07T01:18:43+00:00 heroku[router]: at=info method=GET path=/node/Demo/Shirley_Tilghman/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=96ms status=200 bytes=5878
+2013-01-07T01:18:43+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=304 bytes=0
+2013-01-07T01:18:43+00:00 app[web.1]: [06/Jan/2013 19:18:43] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:18:43+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=5ms status=304 bytes=0
+2013-01-07T01:18:43+00:00 app[web.1]: [06/Jan/2013 19:18:43] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:18:43+00:00 app[web.1]: [06/Jan/2013 19:18:43] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:18:43+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=2ms status=304 bytes=0
+2013-01-07T01:18:52+00:00 heroku[router]: at=info method=GET path=/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=0ms service=43ms status=200 bytes=3869
+2013-01-07T01:18:52+00:00 app[web.1]: [06/Jan/2013 19:18:52] "GET / HTTP/1.1" 200 3869
+2013-01-07T01:18:57+00:00 app[web.1]: [06/Jan/2013 19:18:57] "GET /map/Gibbons_v_Ogden/all/ HTTP/1.1" 200 5607
+2013-01-07T01:18:57+00:00 heroku[router]: at=info method=GET path=/map/Gibbons_v_Ogden/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=1ms service=69ms status=200 bytes=5607
+2013-01-07T01:19:02+00:00 app[web.1]: [06/Jan/2013 19:19:02] "GET /map/ HTTP/1.1" 200 4306
+2013-01-07T01:19:02+00:00 heroku[router]: at=info method=GET path=/map/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=53ms status=200 bytes=4306
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /map/Demo/all/ HTTP/1.1" 200 18194
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=6ms service=200ms status=200 bytes=18194
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=3ms service=4ms status=304 bytes=0
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:19:37+00:00 app[web.1]: [06/Jan/2013 19:19:37] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=5ms service=6ms status=304 bytes=0
+2013-01-07T01:19:37+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=4ms service=5ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /node/Demo/Princeton_University/ HTTP/1.1" 200 8132
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/node/Demo/Princeton_University/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=78ms status=200 bytes=8132
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /static/jQuery.js HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /static/jlnav.js HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/static/jQuery.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=6ms service=7ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/static/jlnav.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=4ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/gwash.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/revwar.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=5ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/revwar.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/gwash.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=7ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/ww1.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 app[web.1]: [06/Jan/2013 19:20:13] "GET /media/images/2013/01/06/Lange-MigrantMother02.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Lange-MigrantMother02.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=6ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/ww1.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=304 bytes=0
+2013-01-07T01:20:13+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=21ms connect=39ms service=18ms status=404 bytes=2951
+2013-01-07T01:20:21+00:00 app[web.1]: [06/Jan/2013 19:20:21] "GET /node/Demo/Shirley_Tilghman/ HTTP/1.1" 200 5878
+2013-01-07T01:20:21+00:00 heroku[router]: at=info method=GET path=/node/Demo/Shirley_Tilghman/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=1ms service=87ms status=200 bytes=5878
+2013-01-07T01:20:22+00:00 app[web.1]: [06/Jan/2013 19:20:22] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:22+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:20:22+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=13ms status=404 bytes=2951
+2013-01-07T01:20:27+00:00 heroku[router]: at=info method=GET path=/node/Demo/George_Washington/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=83ms status=200 bytes=9186
+2013-01-07T01:20:27+00:00 app[web.1]: [06/Jan/2013 19:20:27] "GET /node/Demo/George_Washington/ HTTP/1.1" 200 9186
+2013-01-07T01:20:27+00:00 app[web.1]: [06/Jan/2013 19:20:27] "GET /media/images/2013/01/06/constitution.jpg HTTP/1.1" 304 0
+2013-01-07T01:20:27+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/constitution.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=4ms service=9ms status=304 bytes=0
+2013-01-07T01:20:31+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3004ms service=9ms status=404 bytes=2951
+2013-01-07T01:20:33+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=5ms service=8ms status=404 bytes=2951
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /map/Demo/all/ HTTP/1.1" 200 18194
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/map/Demo/all/ host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=168ms status=200 bytes=18194
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /static/vivagraph.js HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=304 bytes=0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=14ms status=304 bytes=0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 app[web.1]: [06/Jan/2013 19:21:26] "GET /media/images/2013/01/06/supremecourt.png HTTP/1.1" 304 0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=7ms service=15ms status=304 bytes=0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/static/vivagraph.js host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=1ms connect=4ms service=5ms status=304 bytes=0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=2ms connect=7ms service=8ms status=304 bytes=0
+2013-01-07T01:21:26+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=3ms service=7ms status=304 bytes=0
+2013-01-07T01:21:27+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=historyonline.herokuapp.com fwd=140.180.251.159 dyno=web.1 queue=0 wait=0ms connect=2ms service=11ms status=404 bytes=2951
+2013-01-07T01:21:37+00:00 app[web.1]: [06/Jan/2013 19:21:37] "GET /node/Demo/Nassau_Hall/ HTTP/1.1" 200 9110
+2013-01-07T01:21:37+00:00 heroku[router]: at=info method=GET path=/node/Demo/Nassau_Hall/ host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=84ms status=200 bytes=9110
+2013-01-07T01:21:38+00:00 app[web.1]: [06/Jan/2013 19:21:38] "GET /media/images/2013/01/06/nassau_hall.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:38+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/battle_of_princeton.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=4ms status=304 bytes=0
+2013-01-07T01:21:38+00:00 app[web.1]: [06/Jan/2013 19:21:38] "GET /media/images/2013/01/06/battle_of_princeton.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:38+00:00 app[web.1]: [06/Jan/2013 19:21:38] "GET /media/images/2013/01/06/princeton.png HTTP/1.1" 304 0
+2013-01-07T01:21:38+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/princeton.png host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=2ms service=10ms status=304 bytes=0
+2013-01-07T01:21:38+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/nassau_hall.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=0ms connect=4ms service=6ms status=304 bytes=0
+2013-01-07T01:21:38+00:00 app[web.1]: [06/Jan/2013 19:21:38] "GET /media/images/2013/01/06/Shirley_Tilghman_2.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:38+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/Shirley_Tilghman_2.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=1ms connect=3ms service=8ms status=304 bytes=0
+2013-01-07T01:21:38+00:00 app[web.1]: [06/Jan/2013 19:21:38] "GET /media/images/2013/01/06/lincoln.jpg HTTP/1.1" 304 0
+2013-01-07T01:21:38+00:00 heroku[router]: at=info method=GET path=/media/images/2013/01/06/lincoln.jpg host=historyonline.herokuapp.com fwd=140.180.246.139 dyno=web.1 queue=0 wait=2ms connect=25ms service=19ms status=304 bytes=0
