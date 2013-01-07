@@ -21,4 +21,4 @@ def mainMap(request, title, fil):
 
 def mapIntro(request):
 	maps = Map.objects.all()
-	return render_to_response('mapIntro.html', {'maps':maps,})
+	return render_to_response('mapIntro.html', {'maps':maps,}, context_instance = RequestContext(request))
