@@ -167,6 +167,8 @@ if not DEBUG:
     DEFAULT_S3_PATH = "media"
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
     STATIC_S3_PATH = "static"
+    AWS_ACCESS_KEY_ID = 'AKIAIHNAVVYNNJQC3TFQ'
+    AWS_SECRET_ACCESS_KEY = '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'
     AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
 
     MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
