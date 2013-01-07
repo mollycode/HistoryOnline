@@ -1,6 +1,9 @@
 Django==1.4.3
 South==0.7.6
+boto==2.6.0
 distribute==0.6.31
 dj-database-url==0.2.1
+-e git://github.com/jamstooks/django-s3-folder-storage.git@fd959a99b3a62b64d9e73534538efeb016fd4dc7#egg=django_s3_folder_storage-dev
+django-storages==1.1.6
 pillow==1.7.8
 psycopg2==2.4.5

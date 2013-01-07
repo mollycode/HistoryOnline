@@ -1,9 +1,9 @@
 # Django settings for HistoryOnline project.
-import os.path
+import os
 
 PWD = os.path.dirname(os.path.realpath(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'HistoryOnline.home',
     'HistoryOnline.mainMap',
     'HistoryOnline.webdev',
+    's3_folder_storage',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -160,3 +161,17 @@ LOGGING = {
 
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
+
+if not DEBUG:
+    DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
+    DEFAULT_S3_PATH = "media"
+    STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
+    STATIC_S3_PATH = "static"
+    AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+
+    MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
+    MEDIA_URL = '//s3.amazonaws.com/%s/media' % AWS_STORAGE_BUCKET_NAME
+    STATIC_ROOT = '/%s/' % STATIC_S3_PATH
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    STATIC_URL = '//s3.amazonaws.com/%s/static/' % AWS_STORAGE_BUCKET_NAME
+    ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
